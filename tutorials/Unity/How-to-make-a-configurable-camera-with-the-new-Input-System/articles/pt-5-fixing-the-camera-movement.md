@@ -28,7 +28,7 @@ Fortunately, fixing this is easy! We’ll just need to move the last line from `
 
 Press play! Our camera movement is now very smooth and handles direction changes beautifully:
 
-![Movement Example](..\images\pt-5-1-FixMove.gif)
+![Movement Example](../images/pt-5-1-FixMove.gif)
 
-### [Previous (Hooking it up to code)](.\pt-4-hooking-it-up-to-code.md) | [Next (Adding zoom behavior)](.\pt-6-adding-zoom-behavior.md)
+### [Previous (Hooking it up to code)](./pt-4-hooking-it-up-to-code.md) | [Next (Adding zoom behavior)](./pt-6-adding-zoom-behavior.md)
 

@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour
 
 This tutorial will be setup with a 45-degree camera that is looking 1 meter above the ground. It'll also restrict zooming to be within 2 - 10 meters. Here is the full set of properties to set within the inspector:
 
-![Game Object setup](..\images\pt-3-1-gameObject_Ssetup.jpg)
+![Game Object setup](../images/pt-3-1-gameObject_Ssetup.jpg)
 
 Next, configure the camera's starting point based on the properties set. Add the following global variables to your script along with the `Start()` method:
 
@@ -99,4 +99,4 @@ Adding movement to your camera will need a few global variables, a call in `Late
 3.	**Right**: 1, 0
 4.	**Left**: -1, 0
 
-### [Previous (Setting up the input system)](.\pt-2-setting-up-the-input-system.md) | [Next (Hooking it up to code)](.\pt-4-hooking-it-up-to-code.md)
+### [Previous (Setting up the input system)](./pt-2-setting-up-the-input-system.md) | [Next (Hooking it up to code)](./pt-4-hooking-it-up-to-code.md)

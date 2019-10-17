@@ -94,10 +94,10 @@ To increment slowly, our logic needs this normalized to 0, 1 or 0, -1. To fix th
 > 
 > You can read more on the different event types as well as how to set them up [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Processors.html).
 
-![Setting a Processor](..\images\pt-6-1-Processors.gif)
+![Setting a Processor](../images/pt-6-1-Processors.gif)
 
 That's it! Now you should see smooth scrolling behavior:
 
-![Final Zoom Sample](..\images\pt-6-2-zoom-sample.gif)
+![Final Zoom Sample](../images/pt-6-2-zoom-sample.gif)
 
-### [Previous (Fixing the camera movement)](.\pt-5-fixing-the-camera-movement.md) | [Next (Adding rotation behavior)](.\pt-7-adding-rotation-behavior.md)
+### [Previous (Fixing the camera movement)](./pt-5-fixing-the-camera-movement.md) | [Next (Adding rotation behavior)](./pt-7-adding-rotation-behavior.md)

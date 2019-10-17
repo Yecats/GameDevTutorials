@@ -23,7 +23,7 @@ Action Maps, Actions and Input Bindings each have their own set of properties. W
 
 The input scheme is going to be designed for a keyboard / mouse device but could be easily extended to other inputs as well, if needed. In total, we’ll have one control scheme and action map, four actions and five input bindings. The setup will look like this:
 
-![Control Diagram](..\images\controlDiagram.png)
+![Control Diagram](../images/controlDiagram.png)
 
 While this may look like a lot, creating the layout is simple. With the **PlayerInputMapping** asset open, create a new Action Map:
 
@@ -41,11 +41,11 @@ We want to use a **2D Vector Composite** binding node instead of the default one
 3.	Select the node labeled “**Up: <No Binding>**” and set the **Path** to **W [Keyboard]**. 
 4.	Repeat this for the remaining nodes (Down, Left, Right), setting them to their respective keys. 
 
-![First composite bindings](..\images\pt-2-2-wasd-setup.gif)
+![First composite bindings](../images/pt-2-2-wasd-setup.gif)
 
 Do the same thing for the Arrow keys. Add another **2D Vector Composite** and name it **Arrows**. Set each mapping to their respective arrow key. Your map should now look like:
 
-![Second Composite](..\images\5_Second2DCompositeBindings.jpg)
+![Second Composite](../images/5_Second2DCompositeBindings.jpg)
 
 Now we just need to setup the remaining actions and bindings:
 
@@ -67,6 +67,6 @@ Lastly, we’ll setup the Camera_Zoom action and binding:
 
 Click **Save Asset** to save your changes. Your map should look like this:
 
-![Final input map setup](..\images\6_FinalMap.jpg)
+![Final input map setup](../images/6_FinalMap.jpg)
 
-### [Previous (Installing the Input System)](.\pt-1-installing-the-input-system.md)    |     [Next (Setting up the camera)](.\pt-3-setting-up-and-moving-the-camera.md)
+### [Previous (Installing the Input System)](./pt-1-installing-the-input-system.md)    |     [Next (Setting up the camera)](./pt-3-setting-up-and-moving-the-camera.md)

@@ -13,7 +13,7 @@ This can be done by adding the Player Input component to a game object in the sc
 5. Expand the **Events** and **Player** nodes
 5. Under the **Camera_Move** event, reference the **CameraRig** game object and set the event to `CameraController.OnMove()`
 
-![Demo of Final Result](..\images\pt-4-1-SetupOnMove.gif)
+![Demo of Final Result](../images/pt-4-1-SetupOnMove.gif)
 
 That’s it! Push play on your game and move the camera around.
 
@@ -26,4 +26,4 @@ That’s it! Push play on your game and move the camera around.
 > 
 > You can read more on the different event types as well as how to set them up [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Components.html).
 
-### [Previous (Setting up the camera)](.\pt-3-setting-up-and-moving-the-camera.md) | [Next (Fixing the camera movement)](.\pt-5-fixing-the-camera-movement.md)
+### [Previous (Setting up the camera)](./pt-3-setting-up-and-moving-the-camera.md) | [Next (Fixing the camera movement)](./pt-5-fixing-the-camera-movement.md)

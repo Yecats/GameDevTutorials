@@ -17,6 +17,6 @@ You can confirm this is set correctly by going to:
 
 1.	**Edit** > **Project Settings** > **Player** > **Configuration** 
 
-![Active Input Handling Check](..\images\pt-1-2-activeInputHandling.jpg)
+![Active Input Handling Check](../images/pt-1-2-activeInputHandling.jpg)
 
-### [Previous (Introduction)](..\readme.md)    |     [Next (Setting up the input system)](.\pt-2-setting-up-the-input-system.md)
+### [Previous (Introduction)](../readme.md)    |     [Next (Setting up the input system)](./pt-2-setting-up-the-input-system.md)

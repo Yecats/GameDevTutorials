@@ -84,6 +84,6 @@ Hook up the logic to the Input System for the new methods:
 
 That’s it! You should now have a fully functional camera that rotates, zooms and pans around the scene with the new Input System.
 
-![Final Rotation Sample](..\images\pt-7-1-rotate-sample.gif)
+![Final Rotation Sample](../images/pt-7-1-rotate-sample.gif)
 
-### [Previous (Adding zoom behavior)](.\pt-6-adding-zoom-behavior.md)
+### [Previous (Adding zoom behavior)](./pt-6-adding-zoom-behavior.md)
