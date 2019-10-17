@@ -1,4 +1,4 @@
-# Hooking it up to our code
+# Hooking up to the code
 
 Now that there's some initial code, it’s time to do a test run to see how it’s behaving. To do this, you'll need to tell the Input System where to route the actions.
 
