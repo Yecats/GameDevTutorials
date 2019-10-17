@@ -99,4 +99,4 @@ Adding movement to your camera will need a few global variables, a call in `Late
 3.	**Right**: 1, 0
 4.	**Left**: -1, 0
 
-### [Previous (Setting up the input system)](./pt-2-setting-up-the-input-system.md) | [Next (Hooking it up to code)](./pt-4-hooking-it-up-to-code.md)
+### [Previous (Setting up the input system)](./pt-2-setting-up-the-input-system.md) | [Next (Hooking the Input System to code)](./pt-4-hooking-it-up-to-code.md)
