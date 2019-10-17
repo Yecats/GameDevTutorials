@@ -5,9 +5,9 @@ This repository will house various game development tutorials and/or cover helpf
 You can either follow me on Twitter ([@yecats131](https://twitter.com/yecats131)) or watch this repository.
 
 ## How this repository is organized
-Any artifacts relating to a tutorial will be available in the *Tutorials* folder, which is broken down by month and year. Artifacts will typically be code samples or full projects. 
+Any artifacts relating to a tutorial will be available in the *Tutorials* folder, which is organized by engine. Artifacts will typically be code samples or full projects. 
 
-You can find the list of tutorial organized by engine and topic [here](.\tutorial).
+You can find the list of tutorials organized by engine and topic [here](.\tutorials\readme.md).
 
 ## Feedback and topic requests
 Have a topic you'd like to see covered? A great resource that should be listed? Or perhaps just some general feedback? Great! You can send it via:
@@ -50,7 +50,7 @@ I recommend you double check the licensing on everything listed as it may have c
 | Name                                                                                                                                 | Description                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | [Kenney Game Assets](http://www.kenney.nl/)                                                                                          | Over 35,000 free images, audio files and 3D models. |
-| [AxeyWorks Low Poly Free Pack](http://u3d.as/qa6)                                                                                    | A collection of highly downloaded free 3D models.   |
+| [AxeyWorks Low Poly Free Pack](http://u3d.as/qa6)                                                                                    | A collection of free 3D models.   |
 | [Free Lowpoly Packs](https://www.reddit.com/r/gamedev/comments/5lwhoe/free_lowpolyflat_shaded_cars/)                                 | Free low-poly assets created by QuaterniusDev.      |
 | [Reddit List of Free 2D Assets](https://www.reddit.com/r/Unity2D/comments/3dfi5k/lets_create_a_list_of_all_100_free_2d_assets_with/) | List of Free 2D Assets maintained on Reddit.        |
 | [Over 2,600 Game Icons](http://game-icons.net/)                                                                                      | Thousands of free icons in SVG or PNG format. Requests can be made on their [GitHub](https://github.com/game-icons/icons). |
