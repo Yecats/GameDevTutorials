@@ -30,5 +30,5 @@ Press play! Our camera movement is now very smooth and handles direction changes
 
 ![Movement Example](../images/pt-5-1-FixMove.gif)
 
-### [Previous (Hooking it up to code)](./pt-4-hooking-it-up-to-code.md) | [Next (Adding zoom behavior)](./pt-6-adding-zoom-behavior.md)
+### [Previous (Hooking the Input System to code)](./pt-4-hooking-it-up-to-code.md) | [Next (Adding zoom behavior)](./pt-6-adding-zoom-behavior.md)
 
