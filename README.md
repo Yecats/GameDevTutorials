@@ -7,7 +7,7 @@ You can either follow me on Twitter ([@yecats131](https://twitter.com/yecats131)
 ## How this repository is organized
 Any artifacts relating to a tutorial will be available in the *Tutorials* folder, which is organized by engine. Artifacts will typically be code samples or full projects. 
 
-You can find the list of tutorials organized by engine and topic [here](.\tutorials\readme.md).
+You can find the list of tutorials organized by engine and topic [here](./tutorials/readme.md).
 
 ## Feedback and topic requests
 Have a topic you'd like to see covered? A great resource that should be listed? Or perhaps just some general feedback? Great! You can send it via:
