@@ -89,9 +89,6 @@ Adding movement to your camera will need a few global variables, a call in `Late
     }
 
 ```
-
-<script src="https://gist.github.com/Yecats/a1a45f42e9a199ff4327da0c84e5f79a.js"></script>
-
 `OnMove()`, stores the player input value by calling `context.ReadValue<Vector2>()`. Since we are using the Vector 2 composite binding, we will see the following x & y values depending on which input was pushed:
 
 1.	**Up**: 0, 1
