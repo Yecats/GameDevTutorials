@@ -20,9 +20,9 @@ That’s it! Push play on your game and move the camera around.
 > While we will use the “Invoke Unity Events” notification behavior, it is important to understand the different options and how they behave:
 > 
 > 1. **Send Messages**: This will send input messages to all scripts located on this game object only.
-> 2. ***Broadcast Messages**: In addition to sending input messages to components on the same game object, it will also send them down the child hierarchy. *
-> 3. ***Invoke Unity Events**: Invokes a UnityEvent for each type of message. The UI can be used to setup callback methods. *
-> 4. ***Invoke C Sharp Events**: Similar Invoke Unity Events, but instead are C# events that must be registered via callbacks in your scripts.
+> 2. **Broadcast Messages**: In addition to sending input messages to components on the same game object, it will also send them down the child hierarchy.
+> 3. **Invoke Unity Events**: Invokes a UnityEvent for each type of message. The UI can be used to setup callback methods. 
+> 4. **Invoke C Sharp Events**: Similar Invoke Unity Events, but instead are C# events that must be registered via callbacks in your scripts.
 > 
 > You can read more on the different event types as well as how to set them up [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Components.html).
 

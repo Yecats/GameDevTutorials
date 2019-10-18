@@ -120,16 +120,10 @@ namespace Assets.Scripts
         /// <param name="context"></param>
         public void OnRotate(InputAction.CallbackContext context)
         {
-            if (!_rightMouseDown)
-            {
-                return;
-            }
+            // If the right mouse is down then we'll read the mouse delta value. If it is not, we'll clear it out.
+            // Note: Clearing the mouse delta prevents a 'death spin' from occuring if the player flings the mouse really fast in a direction.
+            _mouseDelta = _rightMouseDown ? context.ReadValue<Vector2>() : Vector2.zero;
 
-            //Read the input value that is being sent by the Input System
-            _mouseDelta = context.ReadValue<Vector2>();
-
-            //Set the target rotation based on the mouse delta position and our rotation speed
-            _rotationTarget *= Quaternion.AngleAxis(_mouseDelta.x * Time.deltaTime * RotationSpeed, Vector3.up);
         }
 
         private void LateUpdate()
@@ -140,8 +134,12 @@ namespace Assets.Scripts
             //Move the _actualCamera's local position based on the new zoom factor
             _actualCamera.transform.localPosition = Vector3.Lerp(_actualCamera.transform.localPosition, _cameraPositionTarget, Time.deltaTime * _internalZoomSpeed);
 
+            //Set the target rotation based on the mouse delta position and our rotation speed
+            _rotationTarget *= Quaternion.AngleAxis(_mouseDelta.x * Time.deltaTime * RotationSpeed, Vector3.up);
+
             //Slerp the camera rig's rotation based on the new target
             transform.rotation = Quaternion.Slerp(transform.rotation, _rotationTarget, Time.deltaTime * InternalRotationSpeed);
+
         }
 
         private void FixedUpdate()
