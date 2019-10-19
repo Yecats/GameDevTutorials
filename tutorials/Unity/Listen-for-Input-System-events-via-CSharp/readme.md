@@ -1,5 +1,5 @@
 # Listen for the Input System's Action events via C#
-> This tutorial was created with Unity version 2019.2.
+> **This tutorial was created with Unity version 2019.2.**
 
 In certain scenarios it may be beneficial to listen for Input System Action callbacks via C#, rather than using the built in Player Input component. This tutorial will walk through writing an `InputManager` script to listen for and route such events. 
 

@@ -4,7 +4,7 @@
 
 In the first tutorial, [How to make a configurable camera with the new Input System](../../How-to-make-a-configurable-camera-with-the-new-Input-System), we hooked up interacting with the Input System events via the Player Input component. Since we are going to listen for events via C#, we no longer need that component:
 
-1. Go to the **GameManager** game object and delete the **Player Input** component.
+1. Remove the **Player Input** component from the** GameManager** game object.
 
 We can take advantage of the Input System's ability to automatically generate C# class based off of our Input Action asset file that we created. This will let us more easily interact with our definition file. To generate the file:
 

@@ -18,4 +18,4 @@ To clean the code, remove the if statement at the beginning that is checking for
         }
 
 ```
-### [Listening for callback events](./articles/pt-2-listening-for-callback-events.md)
+### [Listening for callback events](./pt-2-listening-for-callback-events.md)
