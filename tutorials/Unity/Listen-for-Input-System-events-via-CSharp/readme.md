@@ -17,7 +17,7 @@ This is a continuation of the [How to make a configurable camera with the new In
 
 ## Resources
 1. Comments, concerns and/or questions can be posted [here](https://github.com/Yecats/GameDevTutorials/issues/2).
-2. Part 1 Tutorial: [How to make a configurable camera with the new Input System](./How-to-make-a-configurable-camera-with-the-new-Input-System)
+2. Part 1 Tutorial: [How to make a configurable camera with the new Input System](../How-to-make-a-configurable-camera-with-the-new-Input-System)
 2.	Input System [documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/index.html) and [GitHub repository](https://github.com/Unity-Technologies/InputSystem).
 3. [Introducing the new Input System - Unite Copenhagen Video](https://youtu.be/hw3Gk5PoZ6A)
 1. This project uses the [Low Poly: Free Pack](https://www.assetstore.unity3d.com/en/#!/content/58821) by AxeyWorks.
