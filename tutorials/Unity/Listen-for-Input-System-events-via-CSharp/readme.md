@@ -4,7 +4,7 @@
 In certain scenarios it may be beneficial to listen for Input System Action callbacks via C#, rather than using the built in Player Input component. This tutorial will walk through writing an `InputManager` script to listen for and route such events. 
 
 ## Prerequisites
-This is a continuation of the [How to make a configurable camera with the new Input System](./How-to-make-a-configurable-camera-with-the-new-Input-System) tutorial, which covers fundamental knowledge of the Input System. While not recommended (unless you are already familiar with the Input System) you can skip tutorial by cloning the starterProject in this section of the repository.
+This is a continuation of the [How to make a configurable camera with the new Input System](../How-to-make-a-configurable-camera-with-the-new-Input-System) tutorial, which covers fundamental knowledge of the Input System. While not recommended (unless you are already familiar with the Input System) you can skip tutorial by cloning the starterProject in this section of the repository.
 
 ## Learning Outcomes
 
