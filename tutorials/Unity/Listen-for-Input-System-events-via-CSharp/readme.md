@@ -16,7 +16,7 @@ This is a continuation of the [How to make a configurable camera with the new In
 - [Cleaning up the CameraController class](./articles/pt-3-cleaning-up-camera-controller.md)
 
 ## Resources
-1. Comments, concerns and/or questions can be posted [here](https://github.com/Yecats/GameDevTutorials/issues/2).
+1. Comments, concerns and/or questions can be posted [here](https://github.com/Yecats/GameDevTutorials/issues/4).
 2. Part 1 Tutorial: [How to make a configurable camera with the new Input System](../How-to-make-a-configurable-camera-with-the-new-Input-System)
 2.	Input System [documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/index.html) and [GitHub repository](https://github.com/Unity-Technologies/InputSystem).
 3. [Introducing the new Input System - Unite Copenhagen Video](https://youtu.be/hw3Gk5PoZ6A)
