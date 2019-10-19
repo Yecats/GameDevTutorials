@@ -79,11 +79,6 @@ namespace Assets.Scripts
         /// <param name="context"></param>
         public void OnMove(InputAction.CallbackContext context)
         {
-            if (context.phase == InputActionPhase.Started)
-            {
-                return;
-            }
-
             //Read the input value that is being sent by the Input System
             Vector2 value = context.ReadValue<Vector2>();
 
@@ -97,10 +92,6 @@ namespace Assets.Scripts
         /// <param name="context"></param>
         public void OnZoom(InputAction.CallbackContext context)
         {
-            if (context.phase != InputActionPhase.Performed)
-            {
-                return;
-            }
             // Adjust the current zoom value based on the direction of the scroll - this is clamped to our zoom min/max.
             CurrentZoom = Mathf.Clamp(_currentZoomAmount - context.ReadValue<Vector2>().y, ZoomMax, ZoomMin);
         }
