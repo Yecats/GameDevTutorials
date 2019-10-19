@@ -1,8 +1,8 @@
 # Refactoring and setting up the project
 
-> ##### This is a continuation of the [How to make a configurable camera with the new Input System](./How-to-make-a-configurable-camera-with-the-new-Input-System) tutorial, which covers fundamental knowledge of the Input System. If you have skipped the tutorial but want to follow along, make sure to grab the starterProject files in this repository.
+> #### This is a continuation of the [How to make a configurable camera with the new Input System](../../How-to-make-a-configurable-camera-with-the-new-Input-System) tutorial, which covers fundamental knowledge of the Input System. If you have skipped the tutorial but want to follow along, make sure to grab the starterProject files in this repository.
 
-In the first tutorial, [How to make a configurable camera with the new Input System](./How-to-make-a-configurable-camera-with-the-new-Input-System), we hooked up interacting with the Input System events via the Player Input component. Since we are going to listen for events via C#, we no longer need that component:
+In the first tutorial, [How to make a configurable camera with the new Input System](../../How-to-make-a-configurable-camera-with-the-new-Input-System), we hooked up interacting with the Input System events via the Player Input component. Since we are going to listen for events via C#, we no longer need that component:
 
 1. Go to the **GameManager** game object and delete the **Player Input** component.
 
