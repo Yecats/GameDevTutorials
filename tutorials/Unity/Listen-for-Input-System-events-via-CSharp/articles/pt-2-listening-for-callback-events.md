@@ -78,6 +78,6 @@ Add the following code for `OnEnable()` and, because we're good citizens, `OnDis
     }
 ```
 
-> When you enable an action, the Input System will resolve its bindings if it hasn't already. You can read more on Actions [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Actions.html#using-actions) and Binding Resolution [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/ActionBindings.html#binding-resolution).
+> **When you enable an action, the Input System will resolve its bindings if it hasn't already. You can read more on Actions [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Actions.html#using-actions) and Binding Resolution [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/ActionBindings.html#binding-resolution).**
 
 ### [Refactoring and setting up the project](./articles/pt-1-refactoring-project.md)     |     [Next (Cleaning up the CameraController class)](./articles/pt-3-cleaning-up-camera-controller.md)
