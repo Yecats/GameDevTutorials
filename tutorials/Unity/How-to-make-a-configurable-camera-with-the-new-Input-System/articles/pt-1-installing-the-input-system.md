@@ -2,7 +2,7 @@
 
 Unity has been overhauling the Input System to be more robust and to work better for multiple platforms and device configurations. It can also be easily configured to process input for multiple local players (though we will not be doing that in this tutorial). 
 
-> The new Input System is still actively being developed and is considered in preview.
+> **The new Input System is still actively being developed and is considered in preview.**
 
 The Input System can be installed via Package Manager or from the GitHub repository. We’ll do Package Manager:
 

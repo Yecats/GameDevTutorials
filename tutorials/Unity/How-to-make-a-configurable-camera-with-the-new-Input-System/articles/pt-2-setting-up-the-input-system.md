@@ -34,7 +34,7 @@ While this may look like a lot, creating the layout is simple. With the **Player
 
 We want to use a **2D Vector Composite** binding node instead of the default one that was created. This tells the Input System to send a 2D Vector each time the W, S, A, or D keys are pushed. 
 
-> Don't worry if this doesn't make sense right now. We'll walk through the values that are being sent as we hook up the Actions to our camera.
+> **Don't worry if this doesn't make sense right now. We'll walk through the values that are being sent as we hook up the Actions to our camera.**
 
 1.	**Delete** the empty **Binding node** by right clicking on it and selecting **Delete**.
 2.	Right click on the **Camera_Move** Action and select **Add 2D Vector Composite**. Name it **WASD**.
