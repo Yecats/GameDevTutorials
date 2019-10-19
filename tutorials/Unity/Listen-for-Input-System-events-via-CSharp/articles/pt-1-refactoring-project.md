@@ -13,7 +13,7 @@ We can take advantage of the Input System's ability to automatically generate C#
 3. The properties should be:
    1. **C# Class File**: Assets/Settings/PlayerInputMapping.cs
    2. **C# Class Name**: PlayerInputMapping
-   3. **C# Class Namespace**: <Global Namespace>
+   3. **C# Class Namespace**: Global Namespace
 4. Click **apply**.
 
 This will create a new file at the specified location (Assets/Settings) with the class name of PlayerInputMapping under the global namespace. 
