@@ -1,3 +1,5 @@
+> Web friendly versions of the tutorials can be found here: https://yecats.github.io/
+
 # Game Dev Tutorials & Resources
 This repository will house various game development tutorials and/or cover helpful tips/tricks. Whenever possible, each tutorial will have a starter and finished project so that you can follow along. 
 
