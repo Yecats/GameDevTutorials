@@ -59,7 +59,7 @@ The logic within `Start()` is pretty straight forward - it's just checking to ma
 > 
 > 1. **World Space (Global Coordinates)**: The raw coordinate of an object within to the game world. 
 > 2. **Local Space (Local Coordinates)**: The coordinate of an object relative to it's parent. 
-> 3. **Screen Space**: Two demensional space that represents the absolute pixels of a screen. 
+> 3. **Screen Space**: Two dimensional space that represents the absolute pixels of a screen. 
 >
 > Converting between these spaces is a very common action that will be done many times throughout a game.
 
@@ -72,7 +72,7 @@ The `LeftMouseDown_OnClick()` method will need to be hooked up to the Input Syst
 
 Add the `PartyManager` script to the **GameManager** game object:
 
-1. Click on **GameManager** within the hierarchy of the sceen and go to **Add Component** > **Party Manager**.
+1. Click on **GameManager** within the hierarchy of the screen and go to **Add Component** > **Party Manager**.
 2. Within the inspector window, add references to the **Selected Panel**, **Canvas** and **Camera** objects.
 
 > Reminder: By hooking to the **performed** and **canceled** events only, the `LeftMouseDown_OnClick()` method will never get a call from the **started** event.
