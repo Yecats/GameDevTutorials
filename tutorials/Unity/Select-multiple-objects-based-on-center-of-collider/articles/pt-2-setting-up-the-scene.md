@@ -3,7 +3,7 @@ The player will see a green square when they push the left mouse button and drag
 
 Setup the scene by adding the canvas and panel:
 
-1. Right click on an empty spot in the the hiararchy and go to **UI** > **Canvas**. 
+1. Right click on an empty spot in the hierarchy and go to **UI** > **Canvas**. 
 2. Set the following properties:
    1. **Render Mode:** Screen Space Camera
    2. **Render Camera:** Main Camera
