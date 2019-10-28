@@ -4,8 +4,9 @@
 This repository will house various game development tutorials and/or cover helpful tips/tricks. Whenever possible, each tutorial will have a starter and finished project so that you can follow along. 
 
 ## Latest Tutorials
-1. **[October 19, 2019]** [Listen for the Input System's Action events via C#](./tutorials/Unity/Listen-for-Input-System-events-via-CSharp/) Skip the PlayerInput component and register event listeners for Actions directly in code. 
-2. **[October 17, 2019]** [How to make a configurable camera with the new Input System](./tutorials/Unity/How-to-make-a-configurable-camera-with-the-new-Input-System/) Learn the new Unity Input System (currently in preview) while creating a configurable camera that can be used in your game. 
+1. **[October 27, 2019]** [How to select multiple objects based on the center of a collider](./tutorials/Unity/Select-multiple-objects-based-on-center-of-collider/) Learn how to create an RTS/RPG "drag-to-select multiple characters" game mechanic without using raycasts to detect collisions.
+2. **[October 19, 2019]** [Listen for the Input System's Action events via C#](./tutorials/Unity/Listen-for-Input-System-events-via-CSharp/) Skip the PlayerInput component and register event listeners for Actions directly in code. 
+3. **[October 17, 2019]** [How to make a configurable camera with the new Input System](./tutorials/Unity/How-to-make-a-configurable-camera-with-the-new-Input-System/) Learn the new Unity Input System (currently in preview) while creating a configurable camera that can be used in your game. 
 
 ## How to find out when new content is posted
 You can either follow me on Twitter ([@yecats131](https://twitter.com/yecats131)) or watch this repository.
