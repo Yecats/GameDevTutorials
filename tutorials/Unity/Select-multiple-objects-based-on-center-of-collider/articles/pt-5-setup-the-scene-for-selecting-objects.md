@@ -4,7 +4,7 @@
 
 The `collider.bounds.center` property will be used to determine the center point of the selectable game object. If the player drags their selection box over said center point, then the objects property will become selected. If it's not over the center point, it'll be unselected. 
 
-> The bounds of a collider is the bounding volume in world space. It has a lot of really useful properties, such as:
+> The bounds of a collider is the bounding volume in world space. It has useful properties, such as:
 > 
 > 1. **Center**: The center point of the bounding box as a Vector3.  
 > 2. **Min**: The minimal point of the box as a Vector3.
@@ -42,7 +42,7 @@ public class PlayerDetail : MonoBehaviour
 
     void Awake()
     {
-        //get a reference to the collider if not set via the insepctor
+        //get a reference to the collider if not set via the inspector
         if (MyCollider == null)
         {
             MyCollider = GetComponentInChildren<Collider>();
@@ -75,7 +75,7 @@ void Awake()
 }
 ```
 
-> Having a static list makes it unncessary to follow the singleton pattern or get a reference to the script for each character. This is a personal preference as the other two methods would work just fine. 
+> Having a static list makes it unnecessary to follow the singleton pattern or get a reference to the script for each character. This is a personal preference as the other two methods would work just fine. 
 
 It is now time to setup the **Player** game object:
 
