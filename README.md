@@ -59,6 +59,7 @@ Here's a list of resources to help get you started in various aspects of game de
 
 | Name                    | Description    |
 | ----------------------- | ---------------------------------------- |
+| [Models made by me](https://sketchfab.com/yecats131) | Alchemy themed models  |
 | [Kenney Game Assets](http://www.kenney.nl/)  | Over 35,000 free images, audio files and 3D models.  |
 | [AxeyWorks Low Poly Free Pack](http://u3d.as/qa6) | A collection of free 3D models.  |
 | [Free Lowpoly Packs](https://www.reddit.com/r/gamedev/comments/5lwhoe/free_lowpolyflat_shaded_cars/)   | Free low-poly assets created by QuaterniusDev.  |
