@@ -1,4 +1,4 @@
- # Challenge Solution:: Extending the selection logic
+ # Challenge Solution: Extending the selection logic
 
  > ## Get started with the tutorial [here](https://yecats.github.io/2019/12/10/Challenge-extending-the-selection-logic.html).
 
