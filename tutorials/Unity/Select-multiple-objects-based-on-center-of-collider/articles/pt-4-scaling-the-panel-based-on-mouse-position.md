@@ -34,7 +34,7 @@ void FixedUpdate()
 While this sort of works, there are three problems that need to be fixed:
 
 1. The select panel always moves to the mouse position, rather than only when the button is initially pushed.
-2. The select panel should disapear from the screen when the left mouse button is not pushed.
+2. The select panel should disappear from the screen when the left mouse button is not pushed.
 3. The player can't go up or to the left when creating a selection box.
 
 ![Broken Draw Panel](../images/pt-4-1-mouse-draw-panel-broken.gif)
