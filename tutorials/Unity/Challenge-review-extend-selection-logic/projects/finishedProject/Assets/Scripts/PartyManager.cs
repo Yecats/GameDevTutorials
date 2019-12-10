@@ -22,6 +22,10 @@ namespace Assets.Scripts
         private bool _leftMouseButtonDown = false;
         private Vector2 _bounds;
 
+        //button variables
+        private bool _shiftButtonDown = false;
+        private bool _initialPartySetup;
+
         void Awake()
         {
             Characters = new List<PlayerDetail>();
@@ -46,7 +50,29 @@ namespace Assets.Scripts
             }
         }
 
-        public void Escape_OnClick(Inputactio)
+        /// <summary>
+        /// Monitors for whether the escape button is pushed
+        /// </summary>
+        public void EscapeDown_OnClick(InputAction.CallbackContext context)
+        {
+            //Started phase ensures that we only trigger at the start of the button push
+            if (context.phase != InputActionPhase.Started)
+            {
+                return;
+            }
+
+            //clear out the members
+            ClearAllPartyMembers();
+        }
+
+        /// <summary>
+        /// Monitors for whether the shift button is pushed
+        /// </summary>
+        public void ShiftDown_OnClick(InputAction.CallbackContext context)
+        {
+            // Logs the current state of the shift button
+            _shiftButtonDown = context.phase == InputActionPhase.Started;
+        }
 
         /// <summary>
         /// Moves the selection panel to the start location of the mouse 
@@ -63,7 +89,6 @@ namespace Assets.Scripts
                 _selectedPanel.sizeDelta = Vector2.zero;
                 return;
             }
-
             // store the mouse start position
             _mouseStartPosition = Mouse.current.position.ReadValue();
 
@@ -75,6 +100,10 @@ namespace Assets.Scripts
                 out mousePos);
 
             _selectedPanel.localPosition = mousePos;
+
+            //track whether this is an initial selection of the party
+            _initialPartySetup = Characters.Count(x => x.IsSelected) == 0;
+
         }
 
         /// <summary>
@@ -101,14 +130,34 @@ namespace Assets.Scripts
         /// </summary>
         private void SelectPartyMembers()
         {
+            //check to see if some party members are selected and if so, verify that the shift button is down
+            if (!_initialPartySetup && !_shiftButtonDown)
+            {
+                return;
+            }
+
             //Loop through all registered characters
             foreach (PlayerDetail character in Characters)
             {
                 //Get a point on the UI that represents the equivalent for the collider's center point
                 Vector2 screenPosition = WorldToUiSpace(character.MyCollider.bounds.center);
 
-                //Check to see if that point is within the bounds of the selection panel 
-                character.IsSelected = RectTransformUtility.RectangleContainsScreenPoint(_selectedPanel, screenPosition);
+                //Check to see if that point is within the bounds of the selection panel
+
+                //This is an addition to an existing party
+                if (!_initialPartySetup && _shiftButtonDown)
+                {
+                    //Make sure we're only operating on characters who are selected. Without this our existing party members would be deselected
+                    if (!character.IsSelected)
+                    {
+                        character.IsSelected = RectTransformUtility.RectangleContainsScreenPoint(_selectedPanel, screenPosition);
+                    }
+                }
+                //new party creation
+                else
+                {
+                    character.IsSelected = RectTransformUtility.RectangleContainsScreenPoint(_selectedPanel, screenPosition);
+                }
             }
         }
 
@@ -117,8 +166,11 @@ namespace Assets.Scripts
         /// </summary>
         private void ClearAllPartyMembers()
         {
-            //Find all charcaters who are selected and unselect them
-            Characters.ForEach(x => x.IsSelected).IsSelected = false;
+            //loop through all characters and set the status to false
+            foreach (PlayerDetail character in Characters)
+            {
+                character.IsSelected = false;
+            }
         }
 
         void FixedUpdate()

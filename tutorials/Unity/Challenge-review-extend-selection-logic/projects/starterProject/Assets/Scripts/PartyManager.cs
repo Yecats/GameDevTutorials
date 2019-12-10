@@ -46,8 +46,6 @@ namespace Assets.Scripts
             }
         }
 
-        public void Escape_OnClick(Inputactio)
-
         /// <summary>
         /// Moves the selection panel to the start location of the mouse 
         /// </summary>
@@ -110,15 +108,6 @@ namespace Assets.Scripts
                 //Check to see if that point is within the bounds of the selection panel 
                 character.IsSelected = RectTransformUtility.RectangleContainsScreenPoint(_selectedPanel, screenPosition);
             }
-        }
-
-        /// <summary>
-        /// Clears the entire selection of objects
-        /// </summary>
-        private void ClearAllPartyMembers()
-        {
-            //Find all charcaters who are selected and unselect them
-            Characters.ForEach(x => x.IsSelected).IsSelected = false;
         }
 
         void FixedUpdate()
