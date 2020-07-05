@@ -42,7 +42,7 @@ You can configure several properties on the Input System UI Input Module. Here's
 
 The remaining properties let you map **UI events** to the **input mappings** defined in the **Action Asset**. Here's a look at the default mapping:
 
-![how ui events map to action asset](../images/ui-events-action-map-1.png)
+![how ui events map to action asset](../images/ui-events-action-map.png)
 
 ## Pointer behavior
 

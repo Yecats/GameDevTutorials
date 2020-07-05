@@ -7,7 +7,7 @@ As with anything that gives you deep control, there are several ways gather touc
 3.  Name the new game object **GameManager**.
 4.  Add **InputManager** as a new component to **GameManager**.
 
-![setup game manager with input manager](./images/setupGameManager.gif)
+![setup game manager with input manager](../images/setupGameManager.gif)
 
 Open the script `InputManager` in your favorite code editor. Add these
 `using` statements right at the top of the file:
@@ -49,7 +49,7 @@ You can filter on the count or index of a finger. By limiting the `count` of act
 
 If you have a touchscreen monitor, you can run your project in the editor. Otherwise, build and run to a mobile device. Try touching multiple fingers on the screen and notice no debug logs print in the console for them. 
 
-![console example of touch output](./images/touch-example-console-output.png)
+![console example of touch output](../images/touch-example-console-output.png)
 
 There are several useful properties associated with each Touch via the `TouchControl` type.
 
