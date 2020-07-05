@@ -25,7 +25,7 @@ This is a continuation of the [Listen for the Input System Action events via CSh
 - [Scaling the panel based on mouse position](./articles/pt-4-scaling-the-panel-based-on-mouse-position.md)
 - [Setup the scene for selecting objects](./articles/pt-5-setup-the-scene-for-selecting-objects.md)
 - [Coding the selection logic](./articlespt-6-coding-the-selection-logic.md)
-- [Challenge: Extendthe selection logic](./articles/pt-7-challenge-extending-the-selection-logic.md)
+- [Challenge: Extend the selection logic](./articles/pt-7-challenge-extending-the-selection-logic.md)
 
 ## Previous Tutorials in this Series
 1. Part 2: [Listen for the Input System Action events via CSharp](../Listen-for-Input-System-events-via-CSharp/)
