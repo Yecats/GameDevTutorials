@@ -1,4 +1,4 @@
-# Implement Tuoch with the new Input System
+# Implement Touch with the new Input System
 
 > This tutorial was created with Unity version 2019.4.
 
@@ -37,7 +37,7 @@ You'll learn how to:
 9. [Challenge: Upgrade a placed building](./articles/pt-9-challenge-upgrade-a-placed-building.md)
 
 ## Resources
-1. Comments, concerns and/or questions can be posted [here](https://github.com/Yecats/GameDevTutorials/issues/6).
+1. Comments, concerns and/or questions can be posted [here](https://github.com/Yecats/GameDevTutorials/issues/7).
 2. Check out [How to make a configurable camera with the new Unity Input System](https://yecats.github.io/2019/10/17/How-to-make-a-configurable-camera-with-the-new-Input-System.html) if you want to learn more about Action Assets. You'll build the camera rig used in this tutorial from scratch. 
 3. You can also check out [Inventory and Store System - Part 3 (Creating the Store UI)](https://channel9.msdn.com/Shows/dotGAME/Inventory-and-Store-System-Part-3-UI) for a deeper look at the UI system. 
 4. Input System [documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/index.html) and [GitHub repository](https://github.com/Unity-Technologies/InputSystem).
