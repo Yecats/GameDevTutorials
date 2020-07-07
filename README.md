@@ -7,7 +7,7 @@ This repository will house various game development tutorials and/or cover helpf
 View the complete list of tutorials [here](./tutorials/Unity/).
 
 1. **[July 2020]** [Implementing Touch with the new Unity Input System](./tutorials/Unity/Implementing-touch-with-the-new-input-system/): Learn about the EnhancedTouch API by creating common touch actions such as dragging, pinching and tapping. Includes an overview on how to hook the new Input System up to the UI.
-2. **[March 2020]** [Getting started with Unity](./Unity/Getting-started-with-Unity): Learn core concepts such as how to create new projects, navigate the user interface, what assets are and how to import them, scene setup, a brief introduction to the physics engine and more.
+2. **[March 2020]** [Getting started with Unity](./Unity/Getting-started-with-Unity/): Learn core concepts such as how to create new projects, navigate the user interface, what assets are and how to import them, scene setup, a brief introduction to the physics engine and more.
 3. **[December 2019]** [Challenge Solution - Extending the selection logic](./tutorials/Unity/Challenge-review-extend-selection-logic/): Extend the RTS/RPG “drag-to-select multiple characters” game mechanic by adding additional support for routine player actions.
 
 ## How to find out when new content is posted
