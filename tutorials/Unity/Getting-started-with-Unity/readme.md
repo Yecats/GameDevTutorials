@@ -8,7 +8,7 @@ Making games is a fun, rewarding and humbling experience. While learning how can
 
 At the end of this tutorial you will have a game scene that has a ball roll down a ramp and into a bucket. Once it lands in the bucket, the screen will display text.
 
-![final demo](./images/finaldemo.gif)
+![final demo](./images/finalDemo.gif)
 
 ## Learning Outcomes 
 

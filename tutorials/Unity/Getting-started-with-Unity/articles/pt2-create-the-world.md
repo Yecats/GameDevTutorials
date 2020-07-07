@@ -36,4 +36,4 @@ Spoiler: Nothing happens, and the camera is positioned horribly! First, let’s 
 
 **Select** the **Game** tab to see where the camera has moved to. Feel free to adjust the **Position** and **Rotation** if you want a different view.
 
-### [Previous (Getting started)](./pt1-getting-started.md)    |     [Next (Create the world)](./pt3-add-some-physics.md)
+### [Previous (Getting started)](./pt1-getting-started.md)    |     [Next (Add some physics)](./pt3-add-some-physics.md)

@@ -18,4 +18,4 @@ I know, I’ve tricked you again! The ball has mass and responds to gravity, but
 
 Press the **Play** button again to see what happens.
 
-### [Previous (Getting started)](./pt2-create-the-world.md)    |     [Next (Create the world)](./pt4-display-a-message.md)
+### [Previous (Create the world)](./pt2-create-the-world.md)    |     [Next (Display a message)](./pt4-display-a-message.md)

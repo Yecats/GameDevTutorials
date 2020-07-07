@@ -59,4 +59,4 @@ That’s it! Press the Play button to see what happens.
 
 ![final demo](../images/finalDemo.gif)
 
-### [Previous (Getting started)](./pt3-add-some-physics.md)
+### [Previous (Add some physics)](./pt3-add-some-physics.md)
