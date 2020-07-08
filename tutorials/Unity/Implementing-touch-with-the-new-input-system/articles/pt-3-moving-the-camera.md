@@ -21,7 +21,7 @@ Open up `CameraController` and familiarize yourself with its contents. The key p
 
 The player can only move the camera if a single finger is touching the screen. If that condition passes, then `InputManager` needs to determine if the finger moved to a new location on the screen. If the finger moved, the new position goes to `CameraController.Move`.
 
-**Note**: The **Camera Rig** moves little by little each frame via [Vector3.Lerp](https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html). [Time.DeltaTime](https://docs.unity3d.com/ScriptReference/Time-deltaTime.html) and **MovementSpeed** combine to determine how fast to move the Camera Rig. You can adjust **MovementSpeed** to impact how quickly the camera moves to the new target position.
+> The **Camera Rig** moves little by little each frame via [Vector3.Lerp](https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html). [Time.DeltaTime](https://docs.unity3d.com/ScriptReference/Time-deltaTime.html) and **MovementSpeed** combine to determine how fast to move the Camera Rig. You can adjust **MovementSpeed** to impact how quickly the camera moves to the new target position.
 
 Open the `InputManager` script and add the following using statement below the existing using statements:
 
@@ -66,7 +66,7 @@ Here's a step-by-step breakdown:
 While the newPosition calculation looks complicated, it's quite simple. It's based on two key values:
 
 1.  **touch.delta.normalized**: A normalized value guarantees the amount is always somewhere between zero and one. This is useful for determining direction without taking the distance measurement into account.
-2.  **Time.deltaTime \** TouchSpeed**: Used to calculate the distance the touch input has traveled. Using `Time.deltaTime` and `TouchSpeed` ensures a consistent experience.
+2.  **Time.deltaTime * TouchSpeed**: Used to calculate the distance the touch input has traveled. Using `Time.deltaTime` and `TouchSpeed` ensures a consistent experience.
 
 Finally, you need to remove the testing logic you added to `Update` earlier. In `Update`, replace all the code inside the `if (Touch.activeFingers.Count == 1)` statement with:
 

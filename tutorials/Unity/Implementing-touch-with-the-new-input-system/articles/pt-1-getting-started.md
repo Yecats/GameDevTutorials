@@ -37,7 +37,7 @@ The new Input system lets you simulate touch input from other kinds of devices, 
 
 Since you'll add pinch logic for zooming, which requires two touchpoints, you can't use simulation mode for this tutorial.
 
-**Note**: If you're interested in simulation mode, you can enable it by going to **Window** ▸ **Analysis** ▸ **Input Debugger**. This opens the **Input Debug** window. In this window, select **Options** ▸ **Simulate Touch from Mouse or Pen**. 
+> If you're interested in simulation mode, you can enable it by going to **Window** ▸ **Analysis** ▸ **Input Debugger**. This opens the **Input Debug** window. In this window, select **Options** ▸ **Simulate Touch from Mouse or Pen**. 
 
 ![enable simulation mode](../images/enable-simulate-touch-input.png)
 

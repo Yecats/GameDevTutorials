@@ -13,12 +13,12 @@ Now, you'll start by setting up the UI.
 
 The starter project includes a UI prefab with the icons and layout already set up. You only need to add the event logic. First, add the missing game objects to the scene:
 
-1.  Drag the **UI** prefab from **RW/Prefabs** into the scene.
+1.  Drag the **UI** prefab from **WUG/Prefabs** into the scene.
 2.  Then select **GameObject** ▸ **UI** ▸ **Event System** from the top menu.
 3.  Next, click the **Replace with InputSystemUIInputModule** button, located on the **EventSystem** ▸ **Standalone Input Module** component.
 4.  Finally, change **Pointer Behavior** to **Single Unified Pointer**.
 
-**Note**: The **Replace with InputSystemUIInputModule** button only appears if the new Input System package is installed.
+> The **Replace with InputSystemUIInputModule** button only appears if the new Input System package is installed.
 
 ![setup ui](../images/setupUI.gif)
 
@@ -28,7 +28,7 @@ Before you go any further, lets take a closer look at the Input System UI Input 
 
 **Input System UI Input Module** replaces **Standalone Input Module**, which is how the legacy input system communicates with the UI. Using the new component lets the new Input System communicate with UI events. 
 
-**Note**: You can read more about the **Input System UI Input Module** [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/UISupport.html).
+> You can read more about the **Input System UI Input Module** [here](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/UISupport.html).
 
 You can configure several properties on the Input System UI Input Module. Here's a quick explanation of each:
 
@@ -38,7 +38,7 @@ You can configure several properties on the Input System UI Input Module. Here's
 -   **Pointer Behavior**: How to deal with multiple pointers feeding input into the UI.
 -   **Actions Asset**: An Input Action Asset containing all the Actions to control the UI. It defaults to a built-in asset.
 
-> **Note**: Move is a standard UI event. You can read more about UI events [here](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/SupportedEvents.html).
+> Move is a standard UI event. You can read more about UI events [here](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/SupportedEvents.html).
 
 The remaining properties let you map **UI events** to the **input mappings** defined in the **Action Asset**. Here's a look at the default mapping:
 
@@ -53,7 +53,7 @@ The remaining properties let you map **UI events** to the **input mappings** def
     This is the default behavior.
 3.  **Single Unified Pointer**: Routes all input from all pointing devices into a single instance.
 
-> **Note**: Earlier you changed the **Pointer Behavior** property from **Single Mouse Or Pen But Multi Touch And Track** to **Single Unified Pointer**. I tested on a laptop that has both a mouse and a touch screen. With the default value, I found my touches don't register on the UI.
+> Earlier you changed the **Pointer Behavior** property from **Single Mouse Or Pen But Multi Touch And Track** to **Single Unified Pointer**. I tested on a laptop that has both a mouse and a touch screen. With the default value, I found my touches don't register on the UI.
 
 Now that you've learned how the Input System works with the UI, move on to the fun stuff!
 
