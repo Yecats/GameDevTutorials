@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97748ca66d1b7b3448e205f8a48a42e1, type: 3}
+  m_Name: settings
+  m_EditorClassIdentifier: 
+  DimLevel: 93.86811
+  BorderHighlightColor: {r: 0, g: 1, b: 0, a: 1}
+  EnableMiniMap: 0
+  LastRunTimeStamp: 1
+  RunningIcon: {fileID: 21300000, guid: e5b1b229d2a13eb48a686864c4c7c993, type: 3}
+  SuccessIcon: {fileID: 21300000, guid: cdc83b1ed0823ff41805968d8a49da64, type: 3}
+  FailureIcon: {fileID: 21300000, guid: a12f0f96f8cacf0408b24a9bb943d66b, type: 3}
+  DefaultStyleProperties:
+    Script: {fileID: 0}
+    TitleBarColor: {r: 0.09411765, g: 0.70980394, b: 0.9137255, a: 1}
+    Icon: {fileID: 21300000, guid: b672344d83977ea4b92d823b96fa1425, type: 3}
+    IsDecorator: 0
+    InvertResult: 0
+  MainStyleProperties:
+  - Script: {fileID: 11500000, guid: 47671608e30c5894cb8fc90474ff0c24, type: 3}
+    TitleBarColor: {r: 0.902763, g: 0.9137255, b: 0.094117634, a: 1}
+    Icon: {fileID: 21300000, guid: 4b0d0df25c6b3e74b84791a68af268a5, type: 3}
+    IsDecorator: 0
+    InvertResult: 0
+  - Script: {fileID: 11500000, guid: b7a248048f78a174ea83af94fffbd7de, type: 3}
+    TitleBarColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+    Icon: {fileID: 21300000, guid: 56c998e2f5df7684f8ecb19785c5b678, type: 3}
+    IsDecorator: 1
+    InvertResult: 0
+  OverrideStyleProperties:
+  - Script: {fileID: 11500000, guid: 5ace60f9a22a7f943996a87f4e9375c0, type: 3}
+    TitleBarColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+    Icon: {fileID: 21300000, guid: caca494ba8dd66e4b9778df5ecae5910, type: 3}
+    IsDecorator: 1
+    InvertResult: 0
+  - Script: {fileID: 11500000, guid: cb33163a60746be4b86b2acac3c72854, type: 3}
+    TitleBarColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+    Icon: {fileID: 21300000, guid: 314cb246bc81bf04cb7e73b250e47a68, type: 3}
+    IsDecorator: 1
+    InvertResult: 1
+  - Script: {fileID: 11500000, guid: 0eb373d345638724d87d8549bcea9cc5, type: 3}
+    TitleBarColor: {r: 1, g: 0, b: 0.4837742, a: 1}
+    Icon: {fileID: 21300000, guid: 8988c62742731474c966510270e6c45c, type: 3}
+    IsDecorator: 0
+    InvertResult: 0
+  - Script: {fileID: 11500000, guid: d16f85d607ea8c848b4c4cb9e5189631, type: 3}
+    TitleBarColor: {r: 1, g: 0, b: 0.48235297, a: 1}
+    Icon: {fileID: 21300000, guid: 28fe4a2dbaf436c43afef5207096676c, type: 3}
+    IsDecorator: 0
+    InvertResult: 0

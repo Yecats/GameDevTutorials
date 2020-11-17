@@ -6,9 +6,9 @@ This repository will house various game development tutorials and/or cover helpf
 ## Latest Tutorials
 View the complete list of tutorials [here](./tutorials/Unity/).
 
+1. **[November 2020]** [Get started with Behavior Trees](./tutorials/Unity/Get-started-with-behavior-trees)** Learn about behavior trees while creating several standard and custom nodes that will drive an AI to randomly pick up objects around a scene.
 1. **[July 2020]** [Implementing Touch with the new Unity Input System](./tutorials/Unity/Implementing-touch-with-the-new-input-system/): Learn about the EnhancedTouch API by creating common touch actions such as dragging, pinching and tapping. Includes an overview on how to hook the new Input System up to the UI.
 2. **[March 2020]** [Getting started with Unity](./tutorials/Unity/Getting-started-with-Unity/): Learn core concepts such as how to create new projects, navigate the user interface, what assets are and how to import them, scene setup, a brief introduction to the physics engine and more.
-3. **[December 2019]** [Challenge Solution - Extending the selection logic](./tutorials/Unity/Challenge-review-extend-selection-logic/): Extend the RTS/RPG “drag-to-select multiple characters” game mechanic by adding additional support for routine player actions.
 
 ## How to find out when new content is posted
 You can either follow me on Twitter ([@yecats131](https://twitter.com/yecats131)) or watch this repository.

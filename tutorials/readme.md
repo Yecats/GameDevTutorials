@@ -2,6 +2,9 @@
 
 ## Unity
 
+### Artificial Intelligence
+1. **[Get started with Behavior Trees](./Unity/Get-started-with-behavior-trees)** Learn about behavior trees while creating several standard and custom nodes that will drive an AI to randomly pick up objects around a scene.
+
 ### Beginner Tutorials
 1. **[Getting started with Unity](./Unity/Getting-started-with-Unity)**: Learn core concepts such as how to create new projects, navigate the user interface, what assets are and how to import them, scene setup, a brief introduction to the physics engine and more.
 
