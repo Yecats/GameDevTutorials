@@ -1,3 +1,5 @@
+![twitter](https://img.shields.io/twitter/follow/yecats131?style=social) ![Twitter](https://img.shields.io/twitter/follow/whatupgames?style=social)
+
 > Web friendly versions of the tutorials can be found here: https://yecats.github.io/
 
 # Game Dev Tutorials & Resources

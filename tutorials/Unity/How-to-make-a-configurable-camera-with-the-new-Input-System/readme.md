@@ -1,4 +1,7 @@
 # How to make a configurable camera with the new Unity Input System
+> View a 'web friendly' version of this tutorial [here](https://yecats.github.io/2019/10/17/How-to-make-a-configurable-camera-with-the-new-Input-System.html).
+
+
 > This tutorial was created with Unity version 2019.2.
 
 In this tutorial, you’re going to build a configurable camera that handles moving, zooming and rotating. This design works great for games that do not want an attached 3rd or 1st person camera, but instead want freedom to move around a scene. Instead of using the old input system, we’ll be hooking it up to the new one and will review key concepts as we go.
