@@ -7,7 +7,7 @@
 You will see **Materials**, **Models**, **Prefabs**, **Scenes**, **Scripts** and a **Sprites** folder in **Assets/WUG**. Open the **Demo** scene in **Assets/WUG/Scenes**. 
 
 # Behavior Tree versus State Machine
-Behavior Trees and State Machines are both useful tools in the AI world. They can be separately or together to make interesting and unique AI behaviors. While this tutorial will focus on behavior trees, its useful to have an understanding as to the types of scenarios that you may want to use each technique for.
+Behavior Trees and State Machines are both useful tools in the AI world. They can be used separately or together to make interesting and unique AI behaviors. While this tutorial will focus on behavior trees, its useful to have an understanding as to the types of scenarios that you may want to use each technique for.
 
 State machines are great if the AI can operate with fairly shallow logic and a small set of conditions. For example, you might have a siege tower that is either in combat or not. When it is in combat, it shoots an arrow at the target and possibly waits for a set time between shooting.  
 
