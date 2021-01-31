@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="Inventory.uss" />
+    <ui:VisualElement name="Container" class="container">
+        <ui:VisualElement name="Inventory" class="inventory">
+            <ui:Label text="Inventory" display-tooltip-when-elided="true" name="Header" class="header" />
+            <ui:VisualElement name="SlotContainer" class="slotsContainer" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
