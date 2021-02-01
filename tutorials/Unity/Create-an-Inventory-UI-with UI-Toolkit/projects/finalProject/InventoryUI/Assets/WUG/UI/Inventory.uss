@@ -15,8 +15,8 @@
     max-height: 75%;
     width: 50%;
     height: 75%;
-    background-color: rgba(28, 32, 36, 255);
-    border-top-color: rgba(255, 197, 0, 255);
+    background-color: rgb(28, 32, 36);
+    border-top-color: rgb(255, 197, 0);
     border-top-width: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -27,8 +27,8 @@
 .header {
     flex-grow: 0;
     font-size: 24px;
-    color: rgba(255, 197, 0, 255);
-    border-bottom-color: rgba(64, 74, 82, 255);
+    color: rgb(255, 197, 0);
+    border-bottom-color: rgb(64, 74, 82);
     border-bottom-width: 1px;
     margin-bottom: 10px;
 }
@@ -43,9 +43,9 @@
 }
 
 .slotContainer {
-    width: 70px;
-    height: 70px;
-    margin: 3px;
+    width: 128px;
+    height: 128px;
+    margin: 5px;
     border-left-color: rgb(48, 48, 48);
     border-right-color: rgb(48, 48, 48);
     border-top-color: rgb(48, 48, 48);
@@ -61,5 +61,5 @@
 .slotIcon {
     flex-shrink: 0;
     flex-grow: 1;
-    padding: 4px;
+    padding: 15px;
 }

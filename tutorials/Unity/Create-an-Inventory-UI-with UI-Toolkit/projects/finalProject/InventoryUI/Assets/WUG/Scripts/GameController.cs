@@ -14,14 +14,34 @@ public class ItemDetails
     public bool CanDrop;
 }
 
+public enum InventoryChangeType
+{
+    Pickup,
+    Drop
+}
+public delegate void OnInventoryChangedDelegate(string[] itemGuid, InventoryChangeType change);
+
+/// <summary>
+/// Generates and controls access to the Item Database and Inventory Data
+/// </summary>
 public class GameController : MonoBehaviour
 {
-    private List<Sprite> IconSprites;
+    [SerializeField]
+    public List<Sprite> IconSprites;
     private static Dictionary<string, ItemDetails> m_ItemDatabase = new Dictionary<string, ItemDetails>();
+    private List<ItemDetails> m_PlayerInventory = new List<ItemDetails>();
+    public static event OnInventoryChangedDelegate OnInventoryChanged = delegate { };
+
+
+    private void Awake()
+    {
+        PopulateDatabase();
+    }
 
     private void Start()
     {
-        PopulateDatabase();
+        //Let the UI know that some items have been picked up
+        OnInventoryChanged.Invoke(m_ItemDatabase.Keys.ToArray(), InventoryChangeType.Pickup);
     }
 
     /// <summary>
@@ -52,7 +72,6 @@ public class GameController : MonoBehaviour
             Icon = IconSprites.FirstOrDefault(x => x.name.Equals("poison")),
             CanDrop = true
         });
-
 
     }
 

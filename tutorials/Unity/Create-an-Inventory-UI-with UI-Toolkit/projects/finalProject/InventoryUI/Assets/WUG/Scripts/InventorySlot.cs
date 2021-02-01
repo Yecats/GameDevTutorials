@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using UnityEngine.EventSystems;
+using UnityEngine.Scripting;
 using UnityEngine.UIElements;
 
 namespace Assets.WUG.Scripts
@@ -22,6 +24,48 @@ namespace Assets.WUG.Scripts
             //Add USS style properties to the elements
             Icon.AddToClassList("slotIcon");
             AddToClassList("slotContainer");
+
+            RegisterCallback<PointerDownEvent>(OnPointerDown);
         }
+
+        private void OnPointerDown(PointerDownEvent evt)
+        {
+            //Not the left mouse button or this is an empty slotIn
+            if (evt.button != 0 || ItemGuid.Equals(""))
+            {
+                return;
+            }
+
+            InventoryUIController.StartDrag(ItemGuid);
+            
+        }
+
+        /// <summary>
+        /// Sets the Icon and GUID properties
+        /// </summary>
+        /// <param name="item"></param>
+        public void HoldItem(ItemDetails item)
+        {
+            Icon.image = item.Icon.texture;
+            ItemGuid = item.GUID;
+        }
+
+        /// <summary>
+        /// Clears the Icon and GUID properties
+        /// </summary>
+        public void DropItem()
+        {
+            ItemGuid = "";
+            Icon.image = null;
+        }
+
+        #region UXML
+        [Preserve]
+        public new class UxmlFactory : UxmlFactory<InventorySlot, UxmlTraits> { }
+
+        [Preserve]
+        public new class UxmlTraits : VisualElement.UxmlTraits { }
+        #endregion
+
     }
 }
