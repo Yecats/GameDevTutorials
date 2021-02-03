@@ -6,7 +6,7 @@
 
 A great UI is one of the most important parts of any game. It needs to be responsive and intuitive while looking awesome. In this tutorial, you’ll learn the basics of Unity’s new UI system, called UI Toolkit, by creating an in-game inventory system where your player can drag and drop items to move them around. 
 
-![Example](./Images/5-final.gif)
+![Example](./images/5-final.gif)
 
 ## Learning Outcomes 
 What is  great about learning UI Toolkit is you can apply the same skills to create custom UI and extensions for the Unity Editor, runtime debugging tools, and runtime UI for your games. At the end of this tutorial you will be able to:
