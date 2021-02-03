@@ -10,7 +10,7 @@ Writing a good AI is challenging for many reasons. Not only do you need it to be
 
 You will write an AI that will pick up all objects in the scene by navigating to random way points. At the end of this tutorial you will have fundamental knowledge of how a behavior tree works and will have created foundational nodes that can be reused in all your future projects.
 
-![BTG Example](https://github.com/Yecats/GameDevTutorials/blob/master/tutorials/Unity/Get-started-with-behavior-trees/images/treeExample.gif)
+![BTG Example](./images/treeExample.gif)
 
 ## Learning Outcomes 
 You will learn:

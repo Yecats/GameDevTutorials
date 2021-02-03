@@ -1,0 +1,65 @@
+.container {
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory {
+    flex-grow: 1;
+    max-width: 50%;
+    max-height: 75%;
+    width: 50%;
+    height: 75%;
+    background-color: rgb(28, 32, 36);
+    border-top-color: rgb(255, 197, 0);
+    border-top-width: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    flex-grow: 0;
+    font-size: 24px;
+    color: rgb(255, 197, 0);
+    border-bottom-color: rgb(64, 74, 82);
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+}
+
+.slotsContainer {
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    flex-grow: 1;
+    margin-top: 0;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.slotContainer {
+    width: 128px;
+    height: 128px;
+    margin: 5px;
+    border-left-color: rgb(48, 48, 48);
+    border-right-color: rgb(48, 48, 48);
+    border-top-color: rgb(48, 48, 48);
+    border-bottom-color: rgb(48, 48, 48);
+    background-color: rgb(9, 19, 21);
+    background-image: url('/Assets/WUG/Sprites/ItemSlotBackground.png');
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.slotIcon {
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 15px;
+}
