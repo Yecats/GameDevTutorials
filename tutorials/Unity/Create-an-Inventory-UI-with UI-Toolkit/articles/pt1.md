@@ -11,8 +11,8 @@ UI Toolkit completely changes the paradigm on how runtime UI is created. Gone ar
 
 There are many tools and resources that you can use throughout development to better understand how to setup your UI and how to debug issues:
 
-1. **UI Builder**: Visually create and edit your UXML and USS files. Located at **Window** > **UI Toolkit** > **Debugger**.
-2. **UI Debugger**: A diagnostic tool that lets you traverse the hierarchy of the UI to get useful information around the underlying structure and styling.  Located at **Window** > **UI Toolkit** > **UI Builder**.
+1. **UI Builder**: Visually create and edit your UXML and USS files. Located at **Window** > **UI Toolkit** > **UI Builder**.
+2. **UI Debugger**: A diagnostic tool that lets you traverse the hierarchy of the UI to get useful information around the underlying structure and styling.  Located at **Window** > **UI Toolkit** > **Debugger**.
 3. **UI Samples**: Library of code samples for various UI controls. Located at **Window** > **UI Toolkit** > **Samples**.
 
 > UI Toolkit was originally designed as an alternative for IMGUI and many of the controls that you get out of the box with UI Builder do not work with the Runtime version. 
