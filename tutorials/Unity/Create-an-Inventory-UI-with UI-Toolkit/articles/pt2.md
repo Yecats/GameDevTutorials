@@ -83,17 +83,17 @@ Most of the styles are relatively self explanatory or their impact can be discov
 ### Display and visibility
 Display and visibility style properties are two ways that you can toggle whether the player can see the element. They have one major difference:
 
-1. **Visibility**: The layout engine and [event system](https://docs.unity3d.com/2020.1/Documentation/Manual/UIE-Events.html) will still process an element that has their visibility set to hidden.
-2. **Display**: The layout engine and event system will ignored the element if set to **display: none**.
+**Visibility**: The layout engine and [event system](https://docs.unity3d.com/2020.1/Documentation/Manual/UIE-Events.html) will still process an element that has their visibility set to hidden.
+**Display**: The layout engine and event system will ignored the element if set to **display: none**.
 
 Consider a scenario where you have a button that gets click events. If you want to hide the button but keep the click events coming through, you’d set the style to visibility:hidden. If you wanted to hide the button and prevent the events from going through, you’d set the style to display:none.
 
 ### Flex-basis, Flex-grow and flex-shrink
 Flex basis, grow and shrink are probably the three most commonly used properties as they essentially define how the elements will or will not scale relative to each other. Here’s a quick explanation of each:
 
-1. **flex-basis**: The default size of an element before the remaining space is distributed. Auto means “look at my height and width values”. 
-2. **flex-grow**: Defines whether the item can grow if necessary. It’s a ratio shared with all siblings.
-3. **flex-shrink**: Defines whether the item should shrink if necessary.
+**flex-basis**: The default size of an element before the remaining space is distributed. Auto means “look at my height and width values”. 
+**flex-grow**: Defines whether the item can grow if necessary. It’s a ratio shared with all siblings.
+**flex-shrink**: Defines whether the item should shrink if necessary.
 
 Consider a scenario where you wanted to have the inventory UI next to the equipment UI. Instead of sharing the screen space 50/50, you want the Inventory UI to be bigger. To achieve this, you could set Inventory’s flex-grow higher than the Equipment flex-grow, like so:
 
@@ -102,7 +102,7 @@ Consider a scenario where you wanted to have the inventory UI next to the equipm
 ### Absolute and relative positioning
 By default, all newly added elements have their positioning set to relative. This enables them to be processed by the Layout engine, and thus brings a lot of value around ease of maintenance. In fact, it’s generally discouraged to use the Absolute position mode unless necessary. 
 
-Elements with a position of absolute are essentially ‘invisible’ to the layout engine. This means that properties like flex basis, flex-shrink, and flex-grow are irrelevant. Instead, you must set the width/height and **Position** > **Left**, **Top**, **Right** and **Bottom** properties directly. 
+Elements with a position of absolute are essentially ‘invisible’ to the layout engine. This means that properties like flex basis, flex-shrink, and flex-grow are irrelevant. Instead, you must set the width/height and**Position** > **Left**, **Top**, **Right** and **Bottom** properties directly. 
 
 > In this project we will set just one element’s position to absolute - the “ghost” icon that moves with the mouse when you’re dragging an inventory item. The rest will be left at **relative** position.
 

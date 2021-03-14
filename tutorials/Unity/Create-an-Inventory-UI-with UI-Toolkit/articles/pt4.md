@@ -22,8 +22,8 @@ public class InventorySlot : VisualElement
         Add(Icon);
 
         //Add USS style properties to the elements
-        Icon.AddToClassList("itemIcon");
-        AddToClassList("itemButton");
+        Icon.AddToClassList("slotIcon");
+        AddToClassList("slotContainer");
     }
 }
 ```
@@ -118,7 +118,7 @@ public new class UxmlTraits : VisualElement.UxmlTraits { }
 
 Open **UI Builder** and click on the **Project** tab under the **Library** section. InventorySlot should now be an option under the Custom Controls (C#) section. Drag and drop InventorySlot as a child under SlotContainer.
 
-![](../images/4-creating-templates.png)
+![](../images/3-runtime-loaded.png)
 
 Be sure to delete your loop in the InventoryUIController class if you decide to instead add your slots via UI Builder. I’ll leave the loop in for this tutorial.
 

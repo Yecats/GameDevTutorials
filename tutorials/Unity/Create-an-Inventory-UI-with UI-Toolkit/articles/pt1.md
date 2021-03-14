@@ -1,18 +1,18 @@
 # Getting started
 
-UI Toolkit ([formerly UI Elements](https://forum.unity.com/threads/renaming-uielements-to-ui-toolkit.854245/)) is Unity’s new UI system that can be used as an alternative to IMGUI (editor UI) and Unity UI (runtime UI). It’s still in preview, so some of the screenshots in this tutorial are likely to change as new releases occur.
+UI Toolkit ([formerly UI Elements](https://forum.unity.com/threads/renaming-uielements-to-ui-toolkit.854245/)) is Unity’s new UI system that can be used as an alternative to IMGUI (editor UI) and UIGUI (runtime UI). It’s still in preview, so some of the screenshots in this tutorial are likely to change as new releases occur.
 
 UI Toolkit completely changes the paradigm on how runtime UI is created. Gone are the days of the Canvas and GameObject based setup. Instead, you develop your UI with patterns similar to web design, including using style sheets. All components that you make can be reusable, making the design pattern a lot quicker. There are two key concepts that are important to building a new UI:
 
-1. **Unity eXtensible Markup Language Documents (UXML)**: Defines the structure of the user interfaces and reusable UI templates.
-2. **Unity Style Sheets (USS)**: Similar to Cascading Style Sheets (CSS), USS allows you to set visual styles and behaviors to your UI. 
+**Unity eXtensible Markup Language Documents (UXML)**: Defines the structure of the user interfaces and reusable UI templates.
+**Unity Style Sheets (USS)**: Similar to Cascading Style Sheets (CSS), USS allows you to set visual styles and behaviors to your UI. 
 
 > **UXML** and **UI Document** are two terms that are often used interchangeably during this tutorial.
 
 There are many tools and resources that you can use throughout development to better understand how to setup your UI and how to debug issues:
 
-1. **UI Builder**: Visually create and edit your UXML and USS files. Located at **Window** > **UI Toolkit** > **Debugger**.
-2. **UI Debugger**: A diagnostic tool that lets you traverse the hierarchy of the UI to get useful information around the underlying structure and styling.  Located at **Window** > **UI Toolkit** > **UI Builder**.
+1. **UI Builder**: Visually create and edit your UXML and USS files. Located at **Window** > **UI Toolkit** > **UI Builder**.
+2. **UI Debugger**: A diagnostic tool that lets you traverse the hierarchy of the UI to get useful information around the underlying structure and styling.  Located at **Window** > **UI Toolkit** > **Debugger**.
 3. **UI Samples**: Library of code samples for various UI controls. Located at **Window** > **UI Toolkit** > **Samples**.
 
 > UI Toolkit was originally designed as an alternative for IMGUI and many of the controls that you get out of the box with UI Builder do not work with the Runtime version. 

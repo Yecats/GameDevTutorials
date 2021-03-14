@@ -4,7 +4,7 @@ There are many different techniques for creating artificial intelligence in a ga
 
 Behavior Trees are a fantastic way to write modular AI that can scale in complexity. The tree is made up of various **nodes** that when put together, define of the behavior that will drive the AI. Think of the nodes as several lego blocks that are of different colors and the tree as the final masterpiece. You will reuse the different lego blocks (nodes) to build different masterpieces (trees).
 
-> **Nodes** can also be referred to as **Tasks** or **Leafs**, depending on who is teaching. These mean the same thing. I do not like the term "tasks" because 
+> **Nodes** can also be referred to as **Tasks** or **Leafs**, depending on who is teaching. These mean the same thing. 
 
 Behavior Trees have two main guiding principles:
 
