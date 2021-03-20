@@ -1,4 +1,4 @@
-> ## View the entire tutorial on [GameDevTutorials](http://yecats.github.io/2021/03/19/Animate-runtime-progress-bars-with-UI-Toolkit.html)
+> ## View the entire tutorial on [GameDev Resources](http://yecats.github.io/2021/03/19/Animate-runtime-progress-bars-with-UI-Toolkit.html).
 # Introduction
 
 A lot goes into creating an intuitive experience for your player and one of the more common one is a progress bar. Progress bars often appear on loading screens or when the character is doing a long action that the player must wait for. In this tutorial, you will learn some techniques for creating and animating progress bars using UI Toolkit and DOTween.
