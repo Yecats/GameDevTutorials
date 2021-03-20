@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="width: 128px; height: 128px; align-items: center; justify-content: center;">
+        <ui:VisualElement name="Outer_Pivot" style="width: 1px; height: 1px;">
+            <ui:VisualElement name="Outer_Image" style="width: 128px; height: 128px; flex-grow: 0; flex-shrink: 0; background-image: url(&apos;/Assets/WUG/Sprites/OuterCircle.png&apos;); left: -64px; top: -64px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Inner_Pivot" style="width: 1px; height: 1px; display: flex;">
+            <ui:VisualElement name="Inner_Image" style="width: 100px; height: 100px; flex-grow: 0; flex-shrink: 0; background-image: url(&apos;/Assets/WUG/Sprites/InnerCircle.png&apos;); left: -50px; top: -50px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Label text="100%" display-tooltip-when-elided="true" name="txt_Percentage" style="position: absolute; width: 128px; height: 128px; -unity-font: url(&apos;/Assets/WUG/Fonts/Recursive.ttf&apos;); -unity-font-style: bold; font-size: 30px; color: rgba(255, 255, 255, 255); -unity-text-align: middle-center;" />
+</ui:UXML>

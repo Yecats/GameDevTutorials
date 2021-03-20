@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="width: 350px;">
+        <ui:VisualElement name="Container_Header" style="flex-direction: row; font-size: 25px; flex-grow: 0; -unity-font: url(&apos;/Assets/WUG/Fonts/Recursive.ttf&apos;);">
+            <ui:Label text="LOADING...." display-tooltip-when-elided="true" name="txt_Loading" style="color: rgb(0, 230, 255); -unity-font-style: bold; flex-grow: 1;" />
+            <ui:Label text="0%" display-tooltip-when-elided="true" name="txt_Percentage" style="color: rgb(0, 230, 255); -unity-font-style: italic; flex-grow: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Container_Bar" style="border-left-color: rgb(0, 230, 255); border-right-color: rgb(0, 230, 255); border-top-color: rgb(0, 230, 255); border-bottom-color: rgb(0, 230, 255); border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; height: 75px;">
+            <ui:VisualElement name="bar_Progress" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgb(0, 230, 255); height: 100%; width: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -18,4 +18,5 @@
 1. **[Implementing Touch with the new Input System](./Unity/Implementing-touch-with-the-new-input-system/)**: Learn about the EnhancedTouch API by creating common touch actions such as dragging, pinching and tapping. Includes an overview on how to hook the new Input System up to the UI.
 
 ### UI Toolkit / User Interface
-1. **[Create an in-game Inventory UI with UI Toolkit](./Unity/Create-an-Inventory-UI-with UI-Toolkit/)**: Learn the basics of UI Toolkit by creating an in-game inventory system where your player can drag and drop items to move them around.
+1. **[Create an in-game Inventory UI with UI Toolkit](./Unity/Create-an-Inventory-UI-with%20UI-Toolkit/)**: Learn the basics of UI Toolkit by creating an in-game inventory system where your player can drag and drop items to move them around.
+2. **[Animate runtime progress bars UI Toolkit](./Unity/Animate-runtime-progress-bars-UI-Toolkit/)**: Learn how to animate UI Toolkit runtime elements by creating two in-game progress bars.

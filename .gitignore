@@ -33,6 +33,10 @@ ExportedObj/
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
+# Tutorial backup option
+/Tutorial Defaults/
+
+
 # Builds
 *.apk
 *.unitypackage

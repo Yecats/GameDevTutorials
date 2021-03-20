@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="Progressbar_Straight_Border" src="Progressbar_Straight_Border.uxml" />
+    <ui:Instance template="Progressbar_Straight_Border" name="Progressbar_Straight_Border" style="flex-grow: 1; align-items: center; justify-content: center; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0;" />
+</ui:UXML>
