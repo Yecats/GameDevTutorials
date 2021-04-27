@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="height: 40px; background-color: rgba(0, 0, 0, 0); width: 175px; visibility: visible; justify-content: space-between; flex-direction: row;">
+        <ui:VisualElement name="Heart" style="background-image: url(&apos;/Assets/WUG/Sprites/heart_fill.png&apos;); width: 25%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; -unity-background-image-tint-color: rgb(200, 35, 35);" />
+        <ui:VisualElement name="Heart" style="background-image: url(&apos;/Assets/WUG/Sprites/heart_fill.png&apos;); width: 25%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; -unity-background-image-tint-color: rgb(200, 35, 35);" />
+        <ui:VisualElement name="Heart" style="background-image: url(&apos;/Assets/WUG/Sprites/heart_fill.png&apos;); width: 25%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; -unity-background-image-tint-color: rgb(200, 35, 35);" />
+        <ui:VisualElement name="Heart" style="background-image: url(&apos;/Assets/WUG/Sprites/heart_fill.png&apos;); width: 25%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; -unity-background-image-tint-color: rgb(200, 35, 35);" />
+    </ui:VisualElement>
+</ui:UXML>
