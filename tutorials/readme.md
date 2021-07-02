@@ -3,7 +3,8 @@
 ## Unity
 
 ### Addressables
-1. **[Load, unload and change assets at runtime with Addressables](./tutorials/Unity/dynamically-load-with-addressables)**: Learn about the addressable system by dynamically instantiating an addressable asset and altering the texture at runtime.
+1. **[Load, unload and change assets at runtime with Addressables](./Unity/dynamically-load-with-addressables)**: Learn about the addressable system by dynamically instantiating an addressable asset and altering the texture at runtime.
+2. **[Stream content from a remote catalog with Addressables](./Unity/stream-content-remote-catalog-addressables)**: Extend your Addressables knowledge by configuring your game to load content from a remote catalog hosted on Cloud Content Delivery (free tier).
 
 ### Artificial Intelligence
 1. **[Get started with Behavior Trees](./Unity/Get-started-with-behavior-trees)**: Learn about behavior trees while creating several standard and custom nodes that will drive an AI to randomly pick up objects around a scene.

@@ -8,9 +8,9 @@ This repository will house various game development tutorials and/or cover helpf
 ## Latest Tutorials
 View the complete list of tutorials [here](./tutorials/).
 
-1. **[May 2021]** [Load, unload and change assets at runtime with Addressables](./tutorials/Unity/dynamically-load-with-addressables): Learn about Unity's Addressable system by dynamically instantiating an addressable asset and altering the texture at runtime.
-2. **[April 2021]** [Create a health bar that hovers over the player with UI Toolkit](./tutorials/Unity/Create-healthbar-ui-toolkit): Learn how to create a health bar that hovers over the player and enemies with UI Toolkit.
-3. **[March 2021]** [Animate runtime progress bars UI Toolkit](./tutorials/Unity/Animate-runtime-progress-bars-UI-Toolkit): Learn how to animate UI Toolkit runtime elements by creating two in-game progress bars.
+1. **[July 2021]** [Stream content from a remote catalog with Addressables](./tutorials/Unity/stream-content-remote-catalog-addressables): Extend your Addressables knowledge by configuring your game to load content from a remote catalog hosted on Cloud Content Delivery (free tier).
+2. **[May 2021]** [Load, unload and change assets at runtime with Addressables](./tutorials/Unity/dynamically-load-with-addressables): Learn about Unity's Addressable system by dynamically instantiating an addressable asset and altering the texture at runtime.
+3. **[April 2021]** [Create a health bar that hovers over the player with UI Toolkit](./tutorials/Unity/Create-healthbar-ui-toolkit): Learn how to create a health bar that hovers over the player and enemies with UI Toolkit.
 
 ## How to find out when new content is posted
 You can either follow me on Twitter ([@yecats131](https://twitter.com/yecats131)) or watch this repository.
