@@ -4,7 +4,7 @@
 
 Good memory handling is an important aspect for any game - leaving too much garbage around can drag down the performance and turn your players away. Addressables are "the right" way to properly manage dynamically loading assets within your game. It also helps tremendously with memory allocation. In this tutorial, you will get an overview of what the Addressable system is, the benefits in using it, and how to dynamically load/unload an addressable.
 
-![Example](https://gamedev-resources.com/wp-content/uploads/2021/05/movie_003.gif)
+![Example](fina.gif)
 
 ## Learning Outcomes
 Here is what you will learn:
