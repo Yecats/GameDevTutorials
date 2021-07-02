@@ -6,7 +6,7 @@ Having the ability to load content into a game without forcing the user to downl
 
 In this tutorial, you’ll expand on your Addressables knowledge from part 1 of this series and learn how to read from a remote catalog hosted on Unity’s Cloud Content Delivery (CCD) service.
 
-![Example](https://gamedev-resources.com/wp-content/uploads/2021/07/Test-Final_1024x576.gif)
+![Example](final.png)
 
 ## Learning Outcomes
 In this part of the series, you will learn how to:
