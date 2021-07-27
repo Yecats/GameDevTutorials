@@ -1,0 +1,18 @@
+.details-header {
+    background-color: rgb(38, 38, 38);
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    -unity-font-style: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.unity-list-view-item-custom {
+    margin-bottom: 10px;
+}
+
+.unity-base-text-field__input {
+    -unity-text-align: upper left;
+}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ff3cd71435824295d28bc06cdaa0b, type: 3}
+  m_Name: FB038C05-C721-4169-AD7C-8BF82334EA0A
+  m_EditorClassIdentifier: 
+  ID: FB038C05-C721-4169-AD7C-8BF82334EA0A
+  FriendlyName: Boots of the Wild
+  Description: 
+  Category: 0
+  Stackable: 0
+  BuyPrice: 0
+  SellPercentage: 0
+  Icon: {fileID: 21300000, guid: dc32764b6d7615c408f2d50d6c532c9f, type: 3}
