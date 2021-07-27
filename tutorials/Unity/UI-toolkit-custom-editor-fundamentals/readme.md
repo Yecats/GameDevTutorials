@@ -6,7 +6,7 @@ Custom tooling is incredibly helpful for streamlining the development of any gam
 
 This tutorial will cover the fundamentals of creating a custom editor tool, including what scriptable objects are and how to create, delete and bind to one. You will also learn about ListView and the Object Picker.
 
-![Example](final.gif)
+![Example](final.png)
 
 ## Learning Outcomes
 In this part of the series, you will learn how to:
