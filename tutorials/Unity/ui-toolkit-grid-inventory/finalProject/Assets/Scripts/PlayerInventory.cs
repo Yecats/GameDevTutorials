@@ -27,7 +27,7 @@ namespace Assets.Scripts
             {
                 for (int i = 0; i < 9; i++)
                 {
-                    row.Add(new Slot("", $"Slot{i}"));
+                    row.Add(new Slot($"Slot{i}"));
                 }
             }
         }
@@ -35,120 +35,76 @@ namespace Assets.Scripts
         {
             foreach (StoredItem item in StoredItems)
             {
+                List<Slot> spotInInventory = FindSpaceInInventory(item.Details.Dimensions.Height, item.Details.Dimensions.Width);
+
+                //no space
+                if (spotInInventory == null)
+                {
+                    continue;
+                }
+
+                spotInInventory.ForEach(x => x.SetItemInstanceId(item.InstanceGuid));
+
                 GameObject newItem = Instantiate(ItemPrefab, transform);
-                
+
                 //Get the root UI doc of the prefab
                 item.RootVisual = newItem.GetComponent<UIDocument>().rootVisualElement;
-                
+
                 ItemVisual slotVE = new ItemVisual(item.Details);
                 item.RootVisual.Add(slotVE);
-                
-                Vector2 pos = item.Position == Vector2.zero ? GetInitialPosition(item.Details.Dimensions.Height, item.Details.Dimensions.Width) : item.Position;
+
+
+                Vector2 pos = item.Position == Vector2.zero ? GetInitialPosition() : item.Position;
                 slotVE.ConfigureVisuals(item.Details, pos);
 
             }
         }
 
-        //Loop each row
-            //Scan each rows children to until an empty one is found
-            //Check surrounding area based on height / width dimensions to see if the required space is open
-            //if Yes - place
-                //if no, restart - looking at all children. 
-                    // If reached end of row's children, scan next row
-                    //If reach end, do not pick up (debug log)
-
-        private Vector2 GetInitialPosition(int height, int width)
+        private List<Slot> FindSpaceInInventory(int height, int width)
         {
-            Vector2 position = Vector2.zero;
 
+            
             List<Slot> claimedSlots = new List<Slot>();
+            int startIndex = 0;
 
+            //Loop the row
             for (int rowIndex = 0; rowIndex < m_ItemRows.Count; rowIndex++)
             {
-                //Check to see if the right amount of slots were detected
-                if (claimedSlots.Count == height + width)
-                {
-                    break;
-                }
-
                 var slots = m_ItemRows[rowIndex].Query<Slot>().ToList();
-                bool notEnoughSpace = false;
+                bool scanning = true;
 
-                for (int i = 0; i < slots.Count; i++)
+                //Scan the row to find if there's consecutive slots based on requested with
+                while (scanning)
                 {
+                    List<Slot> consecutiveFreeSlots = slots.Skip(startIndex).TakeWhile(x => x.StoredItemInstanceId.Equals("")).Take(width).ToList();
 
-
-                    claimedSlots.Clear();
-                    notEnoughSpace = false;
-
-                    if (slots[i].StoredItemInstanceId.Equals(""))
+                    //The required amount was found
+                    //Going to log them and bail on this to check the next row
+                    if (consecutiveFreeSlots.Count == width)
                     {
-                        claimedSlots.Add(slots[i]);
-
-                        //making sure there's enough width
-                        int remaining = slots.Count - i - 1;
-                        if (remaining >= width)
-                        {
-                            for (int j = i + 1; j < i + width; j++)
-                            {
-                                if (!slots[j].StoredItemInstanceId.Equals(""))
-                                {
-                                    notEnoughSpace = true;
-                                    break;
-                                }
-
-                                claimedSlots.Add(slots[j]);
-                            }
-
-                            //Dope.. starting over.
-                            if (notEnoughSpace)
-                            {
-                                continue;
-                            }
-
-                            //Need to make sure there's enough rows for the height... if not no point in the loop
-                            remaining = m_ItemRows.Count - i;
-
-                            if (remaining >= height)
-                            {
-                                for (int j = rowIndex + 1; j < height; j++)
-                                {
-                                    var slot = m_ItemRows[rowIndex + j].Children().Skip(rowIndex + j - 1).First().Q<Slot>();
-
-                                    if (!slot.StoredItemInstanceId.Equals(""))
-                                    {
-                                        notEnoughSpace = true;
-                                        break;
-                                    }
-
-                                    claimedSlots.Add(slots[j]);
-                                }
-                            }
-
-                            //Dope.. starting over.
-                            if (!notEnoughSpace)
-                            {
-                                break;
-                            }
-                        }
+                        startIndex = slots.IndexOf(consecutiveFreeSlots[0]);
+                        claimedSlots.AddRange(consecutiveFreeSlots);
+                        scanning = false;
+                    }
+                    //Need to check the next set of consecutive items
+                    else
+                    {
+                        startIndex += width;
+                        scanning = startIndex + width >= slots.Count;
                     }
                 }
 
-                //Hit the end and there was not room in the inventory for this!
-                if (notEnoughSpace && rowIndex == m_ItemRows.Count - 1)
+                //Check for "done"
+                if (claimedSlots.Count == width * height)
                 {
-                    Debug.Log("WARNING: No room in the inventory. Item cannot be picekd up");
+                    Debug.Log("FOUND A SPOT!");
+                    return claimedSlots;
                 }
-
-                //found something
-                else if (!notEnoughSpace)
-                {
-                    break;
-                }
-                //still scanning...
             }
 
-            return position;
+            //If this point was hit, then the loop never discovered a spot to place stuff :( 
+            Debug.Log("WARNING: No room in the inventory. Item cannot be picekd up");
+            return null;
         }
     }
 

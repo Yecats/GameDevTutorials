@@ -12,12 +12,15 @@ namespace Assets.Scripts
     {
         public string StoredItemInstanceId { get; private set; }
 
-        public Slot(string itemInstanceId, string elementName)
+        public Slot(string elementName)
         {
             name = elementName;
-            StoredItemInstanceId = itemInstanceId;
             AddToClassList("visual-icon");
         }
 
+        public void SetItemInstanceId(string id)
+        {
+            StoredItemInstanceId = id;
+        }
     }
 }
