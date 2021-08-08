@@ -11,11 +11,11 @@ public class ItemDefinition : ScriptableObject
     public string Description;
     public int SellPrice;
     public Sprite Icon;
-    public SlotDimensions Dimensions;
+    public Dimensions SlotDimension;
 }
 
 [Serializable]
-public struct SlotDimensions
+public struct Dimensions
 {
     public int Height;
     public int Width;

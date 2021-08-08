@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Linq;
+using System.Collections;
 
 namespace Assets.Scripts
 {
@@ -16,95 +17,83 @@ namespace Assets.Scripts
         public GameObject ItemPrefab;
 
         private VisualElement m_Root;
-        private List<VisualElement> m_ItemRows = new List<VisualElement>();
+        public Dimensions InventoryDimensions;
+
+        [SerializeField]
+        private Vector2 m_StartingInventoryPosition;
+        [SerializeField]
+        private Dimensions m_SingleSlotDimension = new Dimensions();
 
         private void Awake()
         {
             m_Root = GetComponentInChildren<UIDocument>().rootVisualElement;
-            m_ItemRows = m_Root.Q("Container").Q("Body").Query("Inventory").Children<VisualElement>().ToList();
 
-            foreach (var row in m_ItemRows)
-            {
-                for (int i = 0; i < 9; i++)
-                {
-                    row.Add(new Slot($"Slot{i}"));
-                }
-            }
+
+
         }
-        private void Start()
+        IEnumerator Start()
         {
+            VisualElement inventoryGrid = m_Root.Q<VisualElement>("Grid");
+            yield return new WaitForSeconds(.1f);
+
+            if (inventoryGrid != null)
+            {
+
+                m_SingleSlotDimension.Width = (int)inventoryGrid.layout.width / InventoryDimensions.Width;
+                m_SingleSlotDimension.Height = (int)inventoryGrid.layout.height / InventoryDimensions.Height;
+
+                m_StartingInventoryPosition = inventoryGrid.worldBound.position;
+
+            }
+
             foreach (StoredItem item in StoredItems)
             {
-                List<Slot> spotInInventory = FindSpaceInInventory(item.Details.Dimensions.Height, item.Details.Dimensions.Width);
 
-                //no space
-                if (spotInInventory == null)
+                GameObject newItem = Instantiate(ItemPrefab, transform);
+                VisualElement newItemRoot = newItem.GetComponent<UIDocument>().rootVisualElement;
+
+                ItemVisual slotVE = new ItemVisual(item.Details);
+                newItemRoot.Add(slotVE); // this needs to happen to do the calculation
+
+                yield return new WaitForSeconds(.1f);
+
+                slotVE.SetSize(m_SingleSlotDimension.Width * item.Details.SlotDimension.Width - 10, m_SingleSlotDimension.Height * item.Details.SlotDimension.Height - 10);
+                bool spaceInInventory = CalculatePosition(slotVE);
+
+                if (!spaceInInventory)
                 {
+                    Debug.Log("No space - Cannot pick up the item");
+                    Destroy(newItem);
                     continue;
                 }
 
-                spotInInventory.ForEach(x => x.SetItemInstanceId(item.InstanceGuid));
-
-                GameObject newItem = Instantiate(ItemPrefab, transform);
-
-                //Get the root UI doc of the prefab
-                item.RootVisual = newItem.GetComponent<UIDocument>().rootVisualElement;
-
-                ItemVisual slotVE = new ItemVisual(item.Details);
-                item.RootVisual.Add(slotVE);
-
-
-                Vector2 pos = item.Position == Vector2.zero ? GetInitialPosition() : item.Position;
-                slotVE.ConfigureVisuals(item.Details, pos);
+                item.RootVisual = newItemRoot;
 
             }
         }
 
-        private List<Slot> FindSpaceInInventory(int height, int width)
+        private bool CalculatePosition(VisualElement newItem)
         {
 
-            
-            List<Slot> claimedSlots = new List<Slot>();
-            int startIndex = 0;
-
-            //Loop the row
-            for (int rowIndex = 0; rowIndex < m_ItemRows.Count; rowIndex++)
+            for (int i = 1; i <= InventoryDimensions.Height; i++)
             {
-                var slots = m_ItemRows[rowIndex].Query<Slot>().ToList();
-                bool scanning = true;
-
-                //Scan the row to find if there's consecutive slots based on requested with
-                while (scanning)
+                for (int j = 1; j <= InventoryDimensions.Width; j++)
                 {
-                    List<Slot> consecutiveFreeSlots = slots.Skip(startIndex).TakeWhile(x => x.StoredItemInstanceId.Equals("")).Take(width).ToList();
+                    Vector2 newPos = new Vector2(m_StartingInventoryPosition.x * j, m_StartingInventoryPosition.y * i);
 
-                    //The required amount was found
-                    //Going to log them and bail on this to check the next row
-                    if (consecutiveFreeSlots.Count == width)
-                    {
-                        startIndex = slots.IndexOf(consecutiveFreeSlots[0]);
-                        claimedSlots.AddRange(consecutiveFreeSlots);
-                        scanning = false;
-                    }
-                    //Need to check the next set of consecutive items
-                    else
-                    {
-                        startIndex += width;
-                        scanning = startIndex + width >= slots.Count;
-                    }
-                }
+                    newItem.parent.style.top = newPos.y;
+                    newItem.parent.style.left = newPos.x;
+                    var overlappingItem = StoredItems.Where(x => x.RootVisual != null).FirstOrDefault(x => x.RootVisual.contentRect.Overlaps(newItem.contentRect));
 
-                //Check for "done"
-                if (claimedSlots.Count == width * height)
-                {
-                    Debug.Log("FOUND A SPOT!");
-                    return claimedSlots;
+                    //Nothing is here! Place the item.
+                    if (overlappingItem == null)
+                    {
+                        return true;
+                    }
                 }
             }
 
-            //If this point was hit, then the loop never discovered a spot to place stuff :( 
-            Debug.Log("WARNING: No room in the inventory. Item cannot be picekd up");
-            return null;
+            return false;
         }
     }
 

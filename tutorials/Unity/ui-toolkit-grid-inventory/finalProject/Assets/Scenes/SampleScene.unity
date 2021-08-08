@@ -382,6 +382,9 @@ MonoBehaviour:
   - Details: {fileID: 11400000, guid: 626dba12e4423b84686e05a0c0828018, type: 2}
     Position: {x: 0, y: 0}
   ItemPrefab: {fileID: 8392455518015979964, guid: 0fb281f0c46bcf64483ddabd8ce5f034, type: 3}
+  InventoryDimensions:
+    Height: 5
+    Width: 9
 --- !u!4 &1995334196
 Transform:
   m_ObjectHideFlags: 0

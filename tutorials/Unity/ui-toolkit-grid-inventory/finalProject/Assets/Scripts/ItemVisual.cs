@@ -18,15 +18,13 @@ namespace Assets.Scripts
             name = $"{item.FriendlyName}";
         }
 
-        internal void ConfigureVisuals(ItemDefinition item, Vector2 pos)
+        internal void SetSize(int width, int height)
         {
             //Set the item size
-            parent.style.height = item.Dimensions.Height * 100;
-            parent.style.width = item.Dimensions.Width * 100;
+            parent.style.height = height;
+            parent.style.width = width;
+            parent.AddToClassList("visual-icon-parent");
 
-            //Set the parent position
-            parent.style.top = pos.y;
-            parent.style.left = pos.x;
         }
 
     }
