@@ -13,9 +13,16 @@
     height: 100%;
     width: 100%;
     -unity-background-scale-mode: scale-to-fit;
-}
-.visual-icon-parent
-{
-    transform-origin: center;
+    position: absolute;
 }
 
+.slot-icon {
+    height: 200px;
+    max-height: 150px;
+    min-height: 50px;
+    min-width: 50px;
+    max-width: 150px;
+    width: 200px;
+    background-image: url('project://database/Assets/UI%20Toolkit/ItemSlotBackground.png?fileID=2800000&guid=d5792bfd9b061884da4defbdd6b39c12&type=3#ItemSlotBackground');
+    -unity-background-scale-mode: scale-to-fit;
+}

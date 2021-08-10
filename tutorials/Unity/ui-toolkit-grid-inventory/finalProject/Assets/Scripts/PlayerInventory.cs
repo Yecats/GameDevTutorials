@@ -17,12 +17,13 @@ namespace Assets.Scripts
         public GameObject ItemPrefab;
 
         private VisualElement m_Root;
+        private VisualElement m_InventoryGrid;
         public Dimensions InventoryDimensions;
 
         [SerializeField]
         private Vector2 m_StartingInventoryPosition;
         [SerializeField]
-        private Dimensions m_SingleSlotDimension = new Dimensions();
+        private Dimensions m_SingleSlotDimension;
 
         private void Awake()
         {
@@ -31,69 +32,70 @@ namespace Assets.Scripts
 
 
         }
-        IEnumerator Start()
+        async void Start()
         {
-            VisualElement inventoryGrid = m_Root.Q<VisualElement>("Grid");
-            yield return new WaitForSeconds(.1f);
+            m_InventoryGrid = m_Root.Q<VisualElement>("Grid");
 
-            if (inventoryGrid != null)
+
+            //await UniTask.WaitForEndOfFrame();
+
+            if (m_InventoryGrid != null)
             {
 
-                m_SingleSlotDimension.Width = (int)inventoryGrid.layout.width / InventoryDimensions.Width;
-                m_SingleSlotDimension.Height = (int)inventoryGrid.layout.height / InventoryDimensions.Height;
+                m_SingleSlotDimension.Width = (int)m_InventoryGrid.layout.width / InventoryDimensions.Width;
+                m_SingleSlotDimension.Height = (int)m_InventoryGrid.layout.height / InventoryDimensions.Height;
 
-                m_StartingInventoryPosition = inventoryGrid.worldBound.position;
+                m_StartingInventoryPosition = m_InventoryGrid.worldBound.position;
 
             }
 
             foreach (StoredItem item in StoredItems)
             {
 
-                GameObject newItem = Instantiate(ItemPrefab, transform);
-                VisualElement newItemRoot = newItem.GetComponent<UIDocument>().rootVisualElement;
+                ItemVisual slotVE = new ItemVisual(item.Details, m_SingleSlotDimension);
+                m_InventoryGrid.Add(slotVE); // this needs to happen to do the calculation
 
-                ItemVisual slotVE = new ItemVisual(item.Details);
-                newItemRoot.Add(slotVE); // this needs to happen to do the calculation
-
-                yield return new WaitForSeconds(.1f);
-
-                slotVE.SetSize(m_SingleSlotDimension.Width * item.Details.SlotDimension.Width - 10, m_SingleSlotDimension.Height * item.Details.SlotDimension.Height - 10);
-                bool spaceInInventory = CalculatePosition(slotVE);
+                bool spaceInInventory = await CalculatePosition(slotVE);
 
                 if (!spaceInInventory)
                 {
                     Debug.Log("No space - Cannot pick up the item");
-                    Destroy(newItem);
+                    m_InventoryGrid.Remove(slotVE);
                     continue;
                 }
 
-                item.RootVisual = newItemRoot;
+                item.RootVisual = slotVE;
+                slotVE.style.visibility = Visibility.Visible;
 
             }
         }
 
-        private bool CalculatePosition(VisualElement newItem)
+
+        async Task<bool> CalculatePosition(VisualElement newItem)
         {
 
-            for (int i = 1; i <= InventoryDimensions.Height; i++)
+            for (int i = 0; i < InventoryDimensions.Height; i++)
             {
-                for (int j = 1; j <= InventoryDimensions.Width; j++)
+                for (int j = 0; j < InventoryDimensions.Width; j++)
                 {
-                    Vector2 newPos = new Vector2(m_StartingInventoryPosition.x * j, m_StartingInventoryPosition.y * i);
+                    Vector2 newPos = new Vector2(m_SingleSlotDimension.Width * j + 5, m_SingleSlotDimension.Height * i + 5);
 
-                    newItem.parent.style.top = newPos.y;
-                    newItem.parent.style.left = newPos.x;
-                    var overlappingItem = StoredItems.Where(x => x.RootVisual != null).FirstOrDefault(x => x.RootVisual.contentRect.Overlaps(newItem.contentRect));
+                    newItem.style.top = newPos.y;
+                    newItem.style.left = newPos.x;
+
+                   // await UniTask.WaitForEndOfFrame();
+
+                    var overlappingItem = StoredItems.Where(x => x.RootVisual != null).FirstOrDefault(x => x.RootVisual.layout.Overlaps(newItem.layout));
 
                     //Nothing is here! Place the item.
                     if (overlappingItem == null)
                     {
-                        return true;
+                       return true;
                     }
                 }
             }
 
-            return false;
+           return false;
         }
     }
 
@@ -107,4 +109,18 @@ namespace Assets.Scripts
 
     }
 
+    public class WaitForPosition : CustomYieldInstruction
+    {
+        public bool scanningForPosition = true;
+        public bool PositionFound = false;
+        private VisualElement m_Element;
+
+        public override bool keepWaiting
+        {
+            get
+            {
+                return scanningForPosition;
+            }
+        }
+    }
 }

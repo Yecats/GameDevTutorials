@@ -16,7 +16,7 @@ MonoBehaviour:
   FriendlyName: Medkit
   Description: A medium medkit that heals for 100 health.
   SellPrice: 100
-  Dimension:
+  Icon: {fileID: 21300000, guid: 99d414ff54d4e684dbf2769b60686fe3, type: 3}
+  SlotDimension:
     Height: 1
     Width: 1
-  Icon: {fileID: 21300000, guid: 99d414ff54d4e684dbf2769b60686fe3, type: 3}

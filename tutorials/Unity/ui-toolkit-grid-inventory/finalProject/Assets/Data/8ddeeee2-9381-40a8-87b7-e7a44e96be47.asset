@@ -16,7 +16,7 @@ MonoBehaviour:
   FriendlyName: Light Ammo
   Description: Light Ammo that can be used with a handgun.
   SellPrice: 5
-  Dimension:
+  Icon: {fileID: 21300000, guid: b106ac71369ff4d4b82a81dc78ab725e, type: 3}
+  SlotDimension:
     Height: 1
     Width: 1
-  Icon: {fileID: 2661643255888296826, guid: 393021b790fe7bd4484e9f84c76ad03e, type: 3}

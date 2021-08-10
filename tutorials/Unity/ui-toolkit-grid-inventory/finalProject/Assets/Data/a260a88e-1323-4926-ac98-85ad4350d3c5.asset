@@ -17,6 +17,6 @@ MonoBehaviour:
   Description: A level 1 handgun that fires energy bullets.
   SellPrice: 10
   Icon: {fileID: 21300000, guid: 2acb355f572e6b54fba005b011635023, type: 3}
-  Dimensions:
+  SlotDimension:
     Height: 1
     Width: 1

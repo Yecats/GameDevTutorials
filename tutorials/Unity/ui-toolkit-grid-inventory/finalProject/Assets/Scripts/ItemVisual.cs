@@ -11,20 +11,14 @@ namespace Assets.Scripts
 {
     public class ItemVisual : VisualElement
     {
-        public ItemVisual(ItemDefinition item)
+        public ItemVisual(ItemDefinition item, Dimensions singleSlotDimensions)
         {
             style.backgroundImage = item.Icon.texture;
             AddToClassList("visual-icon");
             name = $"{item.FriendlyName}";
-        }
-
-        internal void SetSize(int width, int height)
-        {
-            //Set the item size
-            parent.style.height = height;
-            parent.style.width = width;
-            parent.AddToClassList("visual-icon-parent");
-
+            style.height = (item.SlotDimension.Height * singleSlotDimensions.Height) - 10;
+            style.width = (item.SlotDimension.Width * singleSlotDimensions.Width) - 10;
+            style.visibility = Visibility.Hidden;
         }
 
     }
