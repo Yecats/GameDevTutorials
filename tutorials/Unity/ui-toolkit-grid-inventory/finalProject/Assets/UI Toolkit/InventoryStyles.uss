@@ -9,11 +9,26 @@
     font-size: 50px;
 }
 
+.visual-icon-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    background-color: rgb(14, 14, 14);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(75, 75, 75);
+    border-right-color: rgb(75, 75, 75);
+    border-top-color: rgb(75, 75, 75);
+    border-bottom-color: rgb(75, 75, 75);
+}
+
 .visual-icon {
     height: 100%;
     width: 100%;
     -unity-background-scale-mode: scale-to-fit;
-    position: absolute;
 }
 
 .slot-icon {
@@ -23,6 +38,27 @@
     min-width: 50px;
     max-width: 150px;
     width: 200px;
-    background-image: url('project://database/Assets/UI%20Toolkit/ItemSlotBackground.png?fileID=2800000&guid=d5792bfd9b061884da4defbdd6b39c12&type=3#ItemSlotBackground');
+    background-image: none;
     -unity-background-scale-mode: scale-to-fit;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(75, 75, 75);
+    border-right-color: rgb(75, 75, 75);
+    border-top-color: rgb(75, 75, 75);
+    border-bottom-color: rgb(75, 75, 75);
+}
+
+.slot-icon-highlighted {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(202, 158, 0);
+    border-right-color: rgb(202, 158, 0);
+    border-top-color: rgb(202, 158, 0);
+    border-bottom-color: rgb(202, 158, 0);
+    transform-origin: center;
+    position: absolute;
 }

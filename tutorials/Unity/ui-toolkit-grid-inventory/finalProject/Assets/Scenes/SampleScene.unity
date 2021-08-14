@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoredItems:
-  - Details: {fileID: 11400000, guid: 6ea4dc17fe7c44e4f93d5aadcbd012a3, type: 2}
+  - Details: {fileID: 11400000, guid: c112331293b6e994fbf4e296b4d4fcfb, type: 2}
     Position: {x: 0, y: 0}
   - Details: {fileID: 11400000, guid: 6ea4dc17fe7c44e4f93d5aadcbd012a3, type: 2}
     Position: {x: 0, y: 0}
@@ -391,13 +391,15 @@ MonoBehaviour:
     Position: {x: 0, y: 0}
   - Details: {fileID: 11400000, guid: 6ea4dc17fe7c44e4f93d5aadcbd012a3, type: 2}
     Position: {x: 0, y: 0}
-  - Details: {fileID: 11400000, guid: 6ea4dc17fe7c44e4f93d5aadcbd012a3, type: 2}
+  - Details: {fileID: 11400000, guid: 2719d7d4b87f5a7428bc2e84447fca8d, type: 2}
     Position: {x: 0, y: 0}
   - Details: {fileID: 11400000, guid: 6ea4dc17fe7c44e4f93d5aadcbd012a3, type: 2}
     Position: {x: 0, y: 0}
   - Details: {fileID: 11400000, guid: 6ea4dc17fe7c44e4f93d5aadcbd012a3, type: 2}
     Position: {x: 0, y: 0}
-  - Details: {fileID: 11400000, guid: 6ea4dc17fe7c44e4f93d5aadcbd012a3, type: 2}
+  - Details: {fileID: 11400000, guid: 626dba12e4423b84686e05a0c0828018, type: 2}
+    Position: {x: 0, y: 0}
+  - Details: {fileID: 11400000, guid: 626dba12e4423b84686e05a0c0828018, type: 2}
     Position: {x: 0, y: 0}
   ItemPrefab: {fileID: 8392455518015979964, guid: 0fb281f0c46bcf64483ddabd8ce5f034, type: 3}
   InventoryDimensions:

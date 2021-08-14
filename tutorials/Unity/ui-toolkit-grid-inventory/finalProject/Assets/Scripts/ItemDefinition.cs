@@ -17,6 +17,6 @@ public class ItemDefinition : ScriptableObject
 [Serializable]
 public struct Dimensions
 {
-    public int Height;
-    public int Width;
+    public float Height;
+    public float Width;
 }
