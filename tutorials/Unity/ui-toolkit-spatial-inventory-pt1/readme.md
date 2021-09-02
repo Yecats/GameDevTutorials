@@ -6,7 +6,7 @@ Inventory systems are a great way to help facilitate how you want the player to 
 
 This tutorial is part of a series which will explore how you can create an inventory that requires the player to sort by item size. Part 1 will walk through creating the UI design below.
 
-![Example](final.gif)
+![Example](final.png)
 
 ## Learning Outcomes
 In this part of the series, you will learn how to:
