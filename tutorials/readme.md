@@ -26,3 +26,4 @@
 2. **[Animate runtime progress bars UI Toolkit](./Unity/Animate-runtime-progress-bars-UI-Toolkit/)**: Learn how to animate UI Toolkit runtime elements by creating two in-game progress bars.
 3. **[Create a health bar that hovers over the player with UI Toolkit](./Unity/Create-healthbar-ui-toolkit)**: Learn how to create a health bar that hovers over the player and enemies with UI Toolkit.
 4. **[Create an item management editor window with UI Toolkit](./Unity/UI-toolkit-custom-editor-fundamentals)**: Learn the fundamentals of ListView, ObjectPicker, and scriptable objects by creating an editor tool with UI Toolkit.  
+5. **[Create a spatial inventory with UI Toolkit - Part 1](./Unity/ui-toolkit-spatial-inventory-pt1)**: Learn how to design a spatial style inventory where the player can sort items by size. 
