@@ -23,3 +23,8 @@ In this part of the series, you will learn how to:
 * You should have Unity 2021.1.12f1 or later to follow along with this tutorial.
 * This tutorial assumes you have basic knowledge of Unity.
 
+## Resources
+
+1. [Clean Vector Icons by PONETI](https://assetstore.unity.com/packages/2d/gui/icons/clean-vector-icons-132084)
+
+
