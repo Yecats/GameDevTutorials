@@ -19,7 +19,7 @@ In this part of the series, you will learn how to:
 
 ## Prerequisites
 
-> Tutorials may work with earlier versions. The version referenced is the on I used.
+> Tutorials may work with earlier versions. The version referenced is the one I used.
 
 1. Basic knowledge of Addressables and/or completion of [Load, unload and change assets at runtime with Addressables](https://gamedev-resources.com/load-unload-and-change-assets-at-runtime-with-addressables/).
 2.	You need [Unity 2020.3 (LTS)](https://unity3d.com/get-unity/download) or later to follow along with this tutorial.
