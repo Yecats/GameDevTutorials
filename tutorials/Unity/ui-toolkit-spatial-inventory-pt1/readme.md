@@ -18,7 +18,7 @@ In this part of the series, you will learn how to:
 
 ## Prerequisites
 
-> Tutorials may work with earlier versions. The version referenced is the on I used.
+> Tutorials may work with earlier versions. The version referenced is the one I used.
 
 * You should have Unity 2021.1.12f1 or later to follow along with this tutorial.
 * This tutorial assumes you have basic knowledge of Unity.
