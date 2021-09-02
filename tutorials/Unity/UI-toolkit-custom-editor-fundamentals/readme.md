@@ -17,7 +17,7 @@ In this part of the series, you will learn how to:
 
 ## Prerequisites
 
-> Tutorials may work with earlier versions. The version referenced is the on I used.
+> Tutorials may work with earlier versions. The version referenced is the one I used.
 
 1. Basic knowledge of UI Toolkit and UI Builder. Check out [Create a runtime inventory UI with UI Toolkit](https://gamedev-resources.com/create-an-in-game-inventory-ui-with-ui-toolkit/) if you need a primer.
 2.	You need [Unity 2020.3 (LTS)](https://unity3d.com/get-unity/download) or later to follow along with this tutorial.
