@@ -24,8 +24,8 @@
         </ui:VisualElement>
         <ui:VisualElement name="Body" style="flex-grow: 1; flex-direction: row-reverse; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
             <ui:VisualElement name="ItemDetails" style="width: 25%; margin-right: 15px; margin-top: 50px; margin-bottom: 50px; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; border-left-color: rgb(255, 128, 0); border-right-color: rgb(255, 128, 0); border-top-color: rgb(255, 128, 0); border-bottom-color: rgb(255, 128, 0); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;">
-                <ui:Label text="Item Name" display-tooltip-when-elided="true" name="FriendlyName" style="font-size: 36px;" />
-                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu tortor eget justo ullamcorper malesuada nec a nisi. Phasellus hendrerit id ex eget vestibulum. Phasellus pretium ac risus in viverra.&#x9;" display-tooltip-when-elided="true" name="Description" style="flex-grow: 1; margin-left: 0; padding-top: 10px; font-size: 20px; white-space: normal;" />
+                <ui:Label text="Item Name" display-tooltip-when-elided="true" name="FriendlyName" style="font-size: 36px; color: rgba(210, 210, 210, 255);" />
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu tortor eget justo ullamcorper malesuada nec a nisi. Phasellus hendrerit id ex eget vestibulum. Phasellus pretium ac risus in viverra.&#x9;" display-tooltip-when-elided="true" name="Description" style="flex-grow: 1; margin-left: 0; padding-top: 10px; font-size: 20px; white-space: normal; color: rgba(210, 210, 210, 255);" />
                 <ui:VisualElement name="Container_Buttons" style="flex-direction: row; padding-left: 1px; padding-right: 2px; padding-top: 10px;">
                     <ui:Button text="EQUIP" display-tooltip-when-elided="true" name="btn_Equip" class="btn-main" />
                     <ui:Button text="DROP" display-tooltip-when-elided="true" name="btn_Drop" class="btn-main" />
