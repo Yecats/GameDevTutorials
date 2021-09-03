@@ -6,7 +6,7 @@ Inventory systems are a great way to help facilitate how you want the player to 
 
 This tutorial is part of a series which will explore how you can create an inventory that requires the player to sort by item size. Part 1 will walk through creating the UI design below.
 
-![Example](final.gif)
+![Example](final.png)
 
 ## Learning Outcomes
 In this part of the series, you will learn how to:
@@ -18,8 +18,11 @@ In this part of the series, you will learn how to:
 
 ## Prerequisites
 
-> Tutorials may work with earlier versions. The version referenced is the on I used.
+> Tutorials may work with earlier versions. The version referenced is the one I used.
 
 * You should have Unity 2021.1.12f1 or later to follow along with this tutorial.
 * This tutorial assumes you have basic knowledge of Unity.
 
+## Resources
+
+1. [Clean Vector Icons by PONETI](https://assetstore.unity.com/packages/2d/gui/icons/clean-vector-icons-132084)
