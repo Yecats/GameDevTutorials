@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 82
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 91
+  controlID: 76
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 92
+  controlID: 119
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 93
+  controlID: 120
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -372,10 +372,9 @@ MonoBehaviour:
     m_OriginalText: 
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Development\GameDevTutorials\tutorials\Unity\ui-toolkit-size-limited-inventory-pt1\finalProject
+  m_LastProjectPath: D:\Development\GameDevTutorials\tutorials\Unity\ui-toolkit-spatial-inventory-pt1\finalProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -954,7 +953,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -967,7 +966,7 @@ MonoBehaviour:
       y: 21
       width: 1880
       height: 955
-    m_Scale: {x: 0.8842593, y: 0.8842593}
+    m_Scale: {x: 0.9037037, y: 0.9037037}
     m_Translation: {x: 940, y: 477.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -975,12 +974,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1063.0366
-      y: -540
-      width: 2126.0732
-      height: 1080
+      x: -1040.164
+      y: -528.38116
+      width: 2080.328
+      height: 1056.7623
     m_MinimalGUI: 1
-  m_defaultScale: 0.8842593
+  m_defaultScale: 0.9037037
   m_LastWindowPixelSize: {x: 1880, y: 976}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1

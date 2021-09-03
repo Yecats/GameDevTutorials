@@ -13,7 +13,7 @@ View the complete list of tutorials [here](./tutorials/).
 3. **[July 2021]** [Stream content from a remote catalog with Addressables](./tutorials/Unity/stream-content-remote-catalog-addressables): Extend your Addressables knowledge by configuring your game to load content from a remote catalog hosted on Cloud Content Delivery (free tier).
 
 ## How to find out when new content is posted
-The best way to get notified is to sign up for the newsletter. Two other options are to follow me on Twitter ([@yecats131](https://twitter.com/yecats131)) or watch this repository.
+The best way to get notified is to [sign up for the newsletter](https://gamedev-resources.com). Two other options are to follow me on Twitter ([@yecats131](https://twitter.com/yecats131)) or watch this repository.
 
 ## How this repository is organized
 Any artifacts relating to a tutorial will be available in the *Tutorials* folder. Artifacts will typically be code samples or full projects. 

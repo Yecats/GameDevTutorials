@@ -26,5 +26,3 @@ In this part of the series, you will learn how to:
 ## Resources
 
 1. [Clean Vector Icons by PONETI](https://assetstore.unity.com/packages/2d/gui/icons/clean-vector-icons-132084)
-
-
