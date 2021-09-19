@@ -8,9 +8,9 @@ This repository will house various game development tutorials and/or cover helpf
 ## Latest Tutorials
 View the complete list of tutorials [here](./tutorials/).
 
-1. **[September 2021]** [Create a spatial inventory with UI Toolkit - Part 1](./tutorials/Unity/ui-toolkit-spatial-inventory-pt1): Learn how to design a spatial style inventory where the player can sort items by size. 
-2. **[July 2021]** [Create an item management editor window with UI Toolkit](./tutorials/Unity/UI-toolkit-custom-editor-fundamentals): Learn the fundamentals of ListView, ObjectPicker, and scriptable objects by creating an editor tool with UI Toolkit. 
-3. **[July 2021]** [Stream content from a remote catalog with Addressables](./tutorials/Unity/stream-content-remote-catalog-addressables): Extend your Addressables knowledge by configuring your game to load content from a remote catalog hosted on Cloud Content Delivery (free tier).
+1. **[September 2021]** [Code the grid based inventory system](./tutorials/Unity/ui-toolkit-spatial-inventory-pt2): Learn the basics of interacting with UI Toolkit from C#, including creating elements, registering mouse events, and more.
+2. **[September 2021]** [Create a spatial inventory with UI Toolkit - Part 1](./tutorials/Unity/ui-toolkit-spatial-inventory-pt1): Learn how to design a spatial style inventory where the player can sort items by size. 
+3. **[July 2021]** [Create an item management editor window with UI Toolkit](./tutorials/Unity/UI-toolkit-custom-editor-fundamentals): Learn the fundamentals of ListView, ObjectPicker, and scriptable objects by creating an editor tool with UI Toolkit. 
 
 ## How to find out when new content is posted
 The best way to get notified is to [sign up for the newsletter](https://gamedev-resources.com). Two other options are to follow me on Twitter ([@yecats131](https://twitter.com/yecats131)) or watch this repository.

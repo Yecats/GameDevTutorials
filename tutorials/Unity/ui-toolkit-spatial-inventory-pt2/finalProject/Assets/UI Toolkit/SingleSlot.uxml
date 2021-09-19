@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/InventoryStyles.uss?fileID=7433441132597879392&amp;guid=390cb52341512db438b05e15c5b1debf&amp;type=3#InventoryStyles" />
+</ui:UXML>

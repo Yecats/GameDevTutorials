@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: 3ad56d0daa98d8a41b2846a87a936e73
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2493308356698108729
+    second: ammo_orange
+  - first:
+      213: 3097698457777897494
+    second: ammo_iso_orange
+  - first:
+      213: -120565243031153840
+    second: armor_orange
+  - first:
+      213: 7189579883846161915
+    second: armor_iso_orange
+  - first:
+      213: 699549447150466079
+    second: blaster_orange
+  - first:
+      213: 8968075353753836396
+    second: grenade_orange
+  - first:
+      213: -7349818105182745692
+    second: flamethrower_orange
+  - first:
+      213: -668280731567999620
+    second: gun_orange
+  - first:
+      213: -149816282031850031
+    second: missile_orange
+  - first:
+      213: 3797253596837154500
+    second: kit_orange
+  - first:
+      213: -2587188284724139467
+    second: knife_orange
+  - first:
+      213: 2592234081514500868
+    second: rocket _launcher_orange
+  - first:
+      213: 7957662754078680308
+    second: laser_orange
+  - first:
+      213: 1220661210860322223
+    second: med_iso_orange
+  - first:
+      213: 2362835899370419410
+    second: med_orange
+  - first:
+      213: -1949037966533971428
+    second: machine_gun_orange
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ammo_orange
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1687
+        width: 470
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933f0848db20a9220800000000000000
+      internalID: 2493308356698108729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammo_iso_orange
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1704
+        width: 472
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6108025c55c3dfa20800000000000000
+      internalID: 3097698457777897494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor_orange
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1687
+        width: 470
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0539edcdc8aa35ef0800000000000000
+      internalID: -120565243031153840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armor_iso_orange
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1705
+        width: 470
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5d1f4ffc486c360800000000000000
+      internalID: 7189579883846161915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blaster_orange
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1400
+        width: 1399
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14793c048c45b900800000000000000
+      internalID: 699549447150466079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_orange
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1463
+        width: 131
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bde63f401057c70800000000000000
+      internalID: 8968075353753836396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethrower_orange
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1011
+        width: 1112
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab09d4df53300a90800000000000000
+      internalID: -7349818105182745692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_orange
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1056
+        width: 465
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75b6a0273ac9b6f0800000000000000
+      internalID: -668280731567999620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: missile_orange
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1044
+        width: 169
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ddfbef92eebbedf0800000000000000
+      internalID: -149816282031850031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_orange
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 819
+        width: 470
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce8d81170e82b430800000000000000
+      internalID: 3797253596837154500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knife_orange
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 904
+        width: 500
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a27f966f5781cd0800000000000000
+      internalID: -2587188284724139467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket _launcher_orange
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 627
+        width: 989
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4033553b92779f320800000000000000
+      internalID: 2592234081514500868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_orange
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 500
+        width: 442
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f467330d1c4f6e60800000000000000
+      internalID: 7957662754078680308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: med_iso_orange
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 588
+        width: 470
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad7d6867e8a0f010800000000000000
+      internalID: 1220661210860322223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: med_orange
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 174
+        width: 468
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4b38c4bba7ac020800000000000000
+      internalID: 2362835899370419410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: machine_gun_orange
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 175
+        width: 1045
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c123efebb40a3f4e0800000000000000
+      internalID: -1949037966533971428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      med_orange: 2362835899370419410
+      blaster_orange: 699549447150466079
+      rocket _launcher_orange: 2592234081514500868
+      grenade_orange: 8968075353753836396
+      missile_orange: -149816282031850031
+      ammo_orange: 2493308356698108729
+      med_iso_orange: 1220661210860322223
+      kit_orange: 3797253596837154500
+      gun_orange: -668280731567999620
+      flamethrower_orange: -7349818105182745692
+      ammo_iso_orange: 3097698457777897494
+      laser_orange: 7957662754078680308
+      armor_orange: -120565243031153840
+      armor_iso_orange: 7189579883846161915
+      machine_gun_orange: -1949037966533971428
+      knife_orange: -2587188284724139467
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

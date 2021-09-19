@@ -1,0 +1,47 @@
+.mini-header {
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.main-header {
+    flex-grow: 0;
+    font-size: 50px;
+}
+
+.visual-icon-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    background-color: rgb(14, 14, 14);
+    border-width: 1px;
+    border-color: rgb(75, 75, 75);
+}
+
+.visual-icon {
+    height: 100%;
+    width: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.slot-icon {
+    height: 200px;
+    max-height: 150px;
+    min-height: 50px;
+    min-width: 50px;
+    max-width: 150px;
+    width: 200px;
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    border-width: 1px;
+    border-color: rgb(75, 75, 75);
+}
+
+.slot-icon-highlighted {
+    border-width: 1px;
+    border-color: rgb(202, 158, 0);
+    transform-origin: center;
+    position: absolute;
+    visibility: hidden;
+}
