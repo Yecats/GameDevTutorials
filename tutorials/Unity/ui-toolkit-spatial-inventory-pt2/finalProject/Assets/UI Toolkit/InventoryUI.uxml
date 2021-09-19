@@ -1,0 +1,100 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/InventoryStyles.uss?fileID=7433441132597879392&amp;guid=390cb52341512db438b05e15c5b1debf&amp;type=3#InventoryStyles" />
+    <ui:VisualElement name="Container" style="background-color: rgb(29, 29, 29); flex-grow: 1;">
+        <ui:VisualElement name="Header" style="flex-direction: row; flex-grow: 0; border-bottom-color: rgb(255, 124, 0); border-bottom-width: 1px; border-left-width: 0; border-right-width: 0; border-top-width: 0; padding-left: 10px; padding-right: 10px; height: 100px; max-height: 150px; min-height: 100px;">
+            <ui:Label text="INVENTORY" display-tooltip-when-elided="true" name="Header" style="font-size: 50px; flex-grow: 1; -unity-text-align: middle-left; color: rgb(210, 210, 210); margin-bottom: 0; padding-bottom: 0;" />
+            <ui:VisualElement name="Container_Level" style="flex-grow: 1; flex-direction: row; padding-bottom: 0; padding-top: 10px; justify-content: center;">
+                <ui:Label text="30" display-tooltip-when-elided="true" name="Level_Value" class="main-header" style="height: 100%; color: rgb(210, 210, 210); -unity-text-align: middle-left;" />
+                <ui:VisualElement name="Container_Level_Bar" style="flex-grow: 0;">
+                    <ui:Label text="LEVEL" display-tooltip-when-elided="true" name="Header" class="mini-header" style="color: rgb(210, 210, 210);" />
+                    <ui:VisualElement name="Bar_Outter" style="height: 100%; width: 250px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-left-color: rgb(255, 128, 0); border-right-color: rgb(255, 128, 0); border-top-color: rgb(255, 128, 0); border-bottom-color: rgb(255, 128, 0);">
+                        <ui:VisualElement name="Bar_Inner" style="height: 100%; width: 75%; background-color: rgb(152, 89, 26); border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                    </ui:VisualElement>
+                    <ui:Label text="1500 / 2000" display-tooltip-when-elided="true" name="Experience_Value" style="color: rgb(210, 210, 210);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Container_Currency" style="align-items: center; flex-direction: row; justify-content: center; flex-grow: 1;">
+                <ui:VisualElement name="Icon" style="width: 60px; height: 60px; background-image: url(&apos;project://database/Assets/Clean%20Vector%20Icons/T_24_diamond_.png?fileID=2800000&amp;guid=c9f0cc0739579d541a08ac2c78d3e605&amp;type=3#T_24_diamond_&apos;); -unity-slice-right: 0; padding-right: 0; margin-right: 5px;" />
+                <ui:Label text="521&#10;" display-tooltip-when-elided="true" name="Value" class="mini-header main-header" style="flex-grow: 0; color: rgb(210, 210, 210);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Container_Weight" style="align-items: center; flex-direction: row; justify-content: flex-end; flex-grow: 1;">
+                <ui:VisualElement name="Icon" style="width: 60px; height: 60px; background-image: url(&apos;project://database/Assets/Clean%20Vector%20Icons/T_1_anvil_.png?fileID=2800000&amp;guid=6886db5fac1305b4d82a95ca744de0c7&amp;type=3#T_1_anvil_&apos;); margin-right: 5px;" />
+                <ui:Label text="100/300" display-tooltip-when-elided="true" name="Value" class="mini-header main-header" style="flex-grow: 0; color: rgb(210, 210, 210);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Body" style="flex-grow: 1; flex-direction: row-reverse; padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">
+            <ui:VisualElement name="ItemDetails" style="width: 25%; border-left-color: rgb(255, 128, 0); border-right-color: rgb(255, 128, 0); border-top-color: rgb(255, 128, 0); border-bottom-color: rgb(255, 128, 0); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; margin-top: 50px; margin-bottom: 50px; margin-right: 15px;">
+                <ui:Label text="Item Name" display-tooltip-when-elided="true" name="Header" class="main-header" style="font-size: 36px; border-bottom-color: rgb(255, 128, 0); border-bottom-width: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; color: rgb(210, 210, 210);" />
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu tortor eget justo ullamcorper malesuada nec a nisi. Phasellus hendrerit id ex eget vestibulum. Phasellus pretium ac risus in viverra. &#10;" display-tooltip-when-elided="true" name="Body" style="height: 52px; flex-grow: 1; font-size: 20px; white-space: normal; padding-top: 10px; color: rgb(210, 210, 210);" />
+                <ui:VisualElement name="ButtonContainer" style="flex-direction: row;">
+                    <ui:Button text="EQUIP" display-tooltip-when-elided="true" name="btn_Equip" style="height: 52px; font-size: 24px; background-color: rgb(226, 137, 45); border-left-color: rgb(255, 128, 0); border-right-color: rgb(255, 128, 0); border-top-color: rgb(255, 128, 0); border-bottom-color: rgb(255, 128, 0); flex-grow: 1;" />
+                    <ui:Button text="DROP" display-tooltip-when-elided="true" name="btn_Drop" style="height: 52px; font-size: 24px; background-color: rgb(226, 137, 45); border-left-color: rgb(255, 128, 0); border-right-color: rgb(255, 128, 0); border-top-color: rgb(255, 128, 0); border-bottom-color: rgb(255, 128, 0); flex-grow: 1;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Footer">
+                    <ui:VisualElement name="Container_Currency" style="align-items: center; flex-direction: row; justify-content: center; flex-grow: 1; padding-top: 5px; border-top-color: rgb(255, 128, 0); border-top-width: 1px; padding-left: 0; padding-right: 0; padding-bottom: 0; margin-top: 20px; margin-bottom: 0;">
+                        <ui:VisualElement name="Icon" style="width: 30px; height: 30px; background-image: url(&apos;project://database/Assets/Clean%20Vector%20Icons/T_24_diamond_.png?fileID=2800000&amp;guid=c9f0cc0739579d541a08ac2c78d3e605&amp;type=3#T_24_diamond_&apos;); -unity-slice-right: 0; padding-right: 0; margin-right: 5px;" />
+                        <ui:Label text="100" display-tooltip-when-elided="true" name="SellPrice" enable-rich-text="true" class="mini-header main-header" style="flex-grow: 0; font-size: 32px; color: rgb(210, 210, 210);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Inventory" style="flex-grow: 1; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(255, 128, 0); border-right-color: rgb(255, 128, 0); border-top-color: rgb(255, 128, 0); border-bottom-color: rgb(255, 128, 0); margin-right: 20px; background-image: none; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; align-items: center; justify-content: center; -unity-background-scale-mode: scale-to-fit;">
+                <ui:VisualElement name="Grid" style="flex-direction: row; flex-wrap: wrap; align-items: stretch; flex-grow: 0; flex-shrink: 0; height: 894px;">
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                    <ui:VisualElement name="SlotIcon" class="slot-icon" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -21,9 +21,12 @@
 ### Input System (Touch with the EnhancedTouch API)
 1. **[Implementing Touch with the new Input System](./Unity/Implementing-touch-with-the-new-input-system/)**: Learn about the EnhancedTouch API by creating common touch actions such as dragging, pinching and tapping. Includes an overview on how to hook the new Input System up to the UI.
 
-### UI Toolkit / User Interface
+### UI Toolkit / User Interface (General)
 1. **[Create an in-game Inventory UI with UI Toolkit](./Unity/Create-an-Inventory-UI-with%20UI-Toolkit/)**: Learn the basics of UI Toolkit by creating an in-game inventory system where your player can drag and drop items to move them around.
 2. **[Animate runtime progress bars UI Toolkit](./Unity/Animate-runtime-progress-bars-UI-Toolkit/)**: Learn how to animate UI Toolkit runtime elements by creating two in-game progress bars.
 3. **[Create a health bar that hovers over the player with UI Toolkit](./Unity/Create-healthbar-ui-toolkit)**: Learn how to create a health bar that hovers over the player and enemies with UI Toolkit.
 4. **[Create an item management editor window with UI Toolkit](./Unity/UI-toolkit-custom-editor-fundamentals)**: Learn the fundamentals of ListView, ObjectPicker, and scriptable objects by creating an editor tool with UI Toolkit.  
-5. **[Create a spatial inventory with UI Toolkit - Part 1](./Unity/ui-toolkit-spatial-inventory-pt1)**: Learn how to design a spatial style inventory where the player can sort items by size. 
+
+### UI Toolkit / User Interface (Grid Series)
+1. **[Design a grid style inventory window with UI Toolkit](./Unity/ui-toolkit-spatial-inventory-pt1)**: Learn how to design a grid style inventory where the player can sort items by size. 
+2. **[Code the grid based inventory system](./Unity/ui-toolkit-spatial-inventory-pt2)**: Learn the basics of interacting with UI Toolkit from C#, including creating elements, registering mouse events, and more.
