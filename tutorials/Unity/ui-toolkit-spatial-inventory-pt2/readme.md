@@ -4,7 +4,7 @@
 
 There are many different styles of inventory systems and in this tutorial series you will learn how to create a grid-based system that requires the player to sort items by size to carry as many as possible. This part of the series builds on the design from part 1 by instantiating a visual to represent items held and adding the ability to organize them. On the surface, this logic seems simple – just drag/drop. However, scenarios that prevent an item from being placed make the logic more complicated.
 
-> This tutorial is a continuation of the grid inventory system that was started in Part 1, Design the Grid Based Inventory System.
+> This tutorial is a continuation of the grid inventory system that was started in Part 1, [Design the Grid Based Inventory System](https://gamedev-resources.com/create-a-spatial-inventory-with-ui-toolkit-part-1/).
 
 ![Example](final.gif)
 
