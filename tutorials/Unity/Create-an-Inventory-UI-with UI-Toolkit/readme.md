@@ -2,7 +2,7 @@
 
 ## Learn the basics of UI Toolkit, the replacement for IMGUI and the UGUI by creating an in-game inventory.
 
-> You will need Unity 2020.2.2f1 to follow along. This tutorial assumes knowledge of C# and Unity.
+> You will need Unity 2020.2.2f1 or higher to follow along. This tutorial assumes knowledge of C# and Unity.
 
 A great UI is one of the most important parts of any game. It needs to be responsive and intuitive while looking awesome. In this tutorial, you’ll learn the basics of Unity’s new UI system, called UI Toolkit, by creating an in-game inventory system where your player can drag and drop items to move them around. 
 
