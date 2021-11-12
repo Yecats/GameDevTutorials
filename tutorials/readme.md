@@ -30,3 +30,6 @@
 ### UI Toolkit / User Interface (Grid Series)
 1. **[Design a grid style inventory window with UI Toolkit](./Unity/ui-toolkit-spatial-inventory-pt1)**: Learn how to design a grid style inventory where the player can sort items by size. 
 2. **[Code the grid based inventory system](./Unity/ui-toolkit-spatial-inventory-pt2)**: Learn the basics of interacting with UI Toolkit from C#, including creating elements, registering mouse events, and more.
+
+### uGUI
+1. **[Create a compass with uGUI](./Unity/create-a-compass-with-ugui)**: Keep players engaged with a compass that features key objectives around the world for them to complete. 
