@@ -24,5 +24,4 @@ In this part of the series, you will learn how to:
 ## Resources
 
 * [SoftMaskForUGUI](https://github.com/mob-sakai/SoftMaskForUGUI)
-* [POLYGON Starter Pack - Low Poly 3D Art by Synty](https://assetstore.unity.com/packages/3d/props/polygon-starter-pack-low-poly-3d-art-by-synty-156819)
 * [Icons from Game-Icons](https://game-icons.net/)
