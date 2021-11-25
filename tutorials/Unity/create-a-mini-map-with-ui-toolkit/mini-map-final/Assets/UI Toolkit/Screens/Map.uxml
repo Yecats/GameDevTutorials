@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="container" style="flex-grow: 1; align-items: flex-end; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;">
-        <ui:VisualElement name="Map" style="background-image: none; overflow: hidden; border-left-color: rgb(229, 229, 229); border-right-color: rgb(229, 229, 229); border-top-color: rgb(229, 229, 229); border-bottom-color: rgb(229, 229, 229); border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; width: 100%; height: 100%;">
-            <ui:VisualElement name="Image" style="height: 100%; background-image: url(&apos;/Assets/Sprites/game_map.png&apos;); position: relative; top: 0; left: 0; -unity-background-scale-mode: scale-to-fit; width: 100%; align-items: center; justify-content: center;">
+    <Style src="MapStyles.uss" />
+    <ui:VisualElement name="container" style="flex-grow: 1; align-items: center; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; justify-content: center;">
+        <ui:VisualElement name="Map" class="map-container" style="height: 90%;">
+            <ui:VisualElement name="Image" focusable="false" class="map-img">
                 <ui:VisualElement name="Player" style="width: 10px; height: 10px; background-color: rgb(183, 108, 108);" />
             </ui:VisualElement>
             <ui:VisualElement name="Top" style="flex-grow: 1; visibility: visible; display: none;" />

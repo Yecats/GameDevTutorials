@@ -19,10 +19,13 @@ public class PlayerController : MonoBehaviour
     private GameObject _quiverModel;
 
     private static Animator _animator;
+    internal bool IsMoving => _playerMovementDirection != Vector3.zero;
 
     public bool IsGrounded => Physics.Raycast(transform.position, Vector3.down, 1.1f, 1 << 6);
     public void ShowBow() => _bowModel.gameObject.SetActive(true);
     public void ShowQuiver() => _quiverModel.gameObject.SetActive(true);
+
+    private Vector3 _playerMovementDirection;
 
     private void Awake()
     {
@@ -48,11 +51,11 @@ public class PlayerController : MonoBehaviour
     //update position
     private void FixedUpdate()
     {
-        Vector3 newDir = GetInputDirection();
+        _playerMovementDirection = GetInputDirection();
 
-        _rigidBody.MovePosition(_rigidBody.position + (transform.rotation * newDir * Time.fixedDeltaTime * MoveSpeed));
+        _rigidBody.MovePosition(_rigidBody.position + (transform.rotation * _playerMovementDirection * Time.fixedDeltaTime * MoveSpeed));
 
-        if (newDir == Vector3.zero && IsGrounded)
+        if (_playerMovementDirection == Vector3.zero && IsGrounded)
         {
             _rigidBody.velocity = Vector3.zero;
             _rigidBody.angularVelocity = Vector3.zero;

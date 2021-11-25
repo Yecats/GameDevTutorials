@@ -1,0 +1,33 @@
+:root {
+    --white-dim: rgba(255, 255, 200, 0.55);
+    --map-border-color: rgb(255, 255, 200);
+}
+
+.map-img {
+    height: 100%;
+    width: 115%;
+    background-image: url('/Assets/Sprites/game_map.png');
+    -unity-background-scale-mode: scale-and-crop;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    -unityBackgroundImageTintColor: white
+}
+
+.dim {
+    -unity-background-image-tint-color: var(--white-dim);
+}
+
+.map-container {
+    width: 50%;
+    height: 747px;
+    overflow: hidden;
+    border-left-color: var(--map-border-color);
+    border-right-color: var(--map-border-color);
+    border-top-color: var(--map-border-color);
+    border-bottom-color: var(--map-border-color);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+}
