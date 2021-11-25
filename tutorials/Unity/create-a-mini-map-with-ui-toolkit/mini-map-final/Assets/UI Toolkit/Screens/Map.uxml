@@ -3,7 +3,9 @@
     <ui:VisualElement name="container" style="flex-grow: 1; align-items: center; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; justify-content: center;">
         <ui:VisualElement name="Map" class="map-container" style="height: 90%;">
             <ui:VisualElement name="Image" focusable="false" class="map-img">
-                <ui:VisualElement name="Player" style="width: 10px; height: 10px; background-color: rgb(183, 108, 108);" />
+                <ui:VisualElement name="Player" style="width: 10px; height: 10px; background-color: rgb(183, 108, 108);">
+                    <ui:VisualElement style="background-image: url(&apos;/Assets/Sprites/playerCone.png&apos;); width: 80px; height: 80px; -unity-background-scale-mode: scale-to-fit; position: absolute; top: -80px; left: -35px; -unity-background-image-tint-color: rgb(197, 115, 115);" />
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Top" style="flex-grow: 1; visibility: visible; display: none;" />
             <ui:VisualElement name="Bottom" style="flex-grow: 1; flex-direction: row; align-items: flex-end; display: none;">

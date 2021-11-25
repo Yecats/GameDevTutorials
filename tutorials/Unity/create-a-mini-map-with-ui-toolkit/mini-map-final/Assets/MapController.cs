@@ -50,7 +50,7 @@ public class MapController : MonoBehaviour
         }
 
         _playerRepresentation.transform.position = new Vector3(Player.transform.position.x * Multiplyer, Player.transform.position.z * -Multiplyer, 0);
-
+        _playerRepresentation.transform.rotation = Quaternion.Euler(0, 0, Player.transform.rotation.eulerAngles.y);
         //Animate the fade of the map
         if (!MapFaded && PlayerController.Instance.IsMoving && IsMapOpen)
         {
