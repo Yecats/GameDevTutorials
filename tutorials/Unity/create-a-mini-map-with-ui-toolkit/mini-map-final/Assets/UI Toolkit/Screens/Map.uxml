@@ -1,7 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="container" style="flex-grow: 1; align-items: flex-end;">
-        <ui:VisualElement name="Map" style="width: 200px; height: 200px; background-image: url(&apos;/Assets/Sprites/round_mask.svg&apos;); overflow: hidden;">
-            <ui:VisualElement name="Image" style="width: 512px; height: 512px; background-image: url(&apos;/Assets/Sprites/game_map.png&apos;); position: absolute; top: -181px; left: -153px;" />
+    <ui:VisualElement name="container" style="flex-grow: 1; align-items: flex-end; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;">
+        <ui:VisualElement name="Map" style="background-image: none; overflow: hidden; border-left-color: rgb(229, 229, 229); border-right-color: rgb(229, 229, 229); border-top-color: rgb(229, 229, 229); border-bottom-color: rgb(229, 229, 229); border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; width: 100%; height: 100%;">
+            <ui:VisualElement name="Image" style="height: 100%; background-image: url(&apos;/Assets/Sprites/game_map.png&apos;); position: relative; top: 0; left: 0; -unity-background-scale-mode: scale-to-fit; width: 100%; align-items: center; justify-content: center;">
+                <ui:VisualElement name="Player" style="width: 10px; height: 10px; background-color: rgb(183, 108, 108);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Top" style="flex-grow: 1; visibility: visible; display: none;" />
+            <ui:VisualElement name="Bottom" style="flex-grow: 1; flex-direction: row; align-items: flex-end; display: none;">
+                <ui:Label text="+" display-tooltip-when-elided="true" style="-unity-font-style: bold; flex-grow: 1; font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: lower-left; justify-content: flex-end;" />
+                <ui:Label text="-" display-tooltip-when-elided="true" style="-unity-font-style: bold; flex-grow: 0; font-size: 25px; -unity-text-align: lower-right; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
