@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="container" style="flex-grow: 1; align-items: flex-end;">
+        <ui:VisualElement name="Map" style="width: 200px; height: 200px; background-image: url(&apos;/Assets/Sprites/round_mask.svg&apos;); overflow: hidden;">
+            <ui:VisualElement name="Image" style="width: 512px; height: 512px; background-image: url(&apos;/Assets/Sprites/game_map.png&apos;); position: absolute; top: -181px; left: -153px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
