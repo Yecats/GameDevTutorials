@@ -23,9 +23,10 @@ public class MapController : MonoBehaviour
         set
         {
             _mapFaded = value;
+
             _mapImage.experimental.animation.Start(_mapImage.style.unityBackgroundImageTintColor.value, value 
                 ? _mapImage.style.unityBackgroundImageTintColor.value.WithAlpha(.5f) 
-                : Color.white, 1000, (elm, val) => { elm.style.unityBackgroundImageTintColor = val; });
+                : Color.white, 500, (elm, val) => { elm.style.unityBackgroundImageTintColor = val; });
         }
     }
 
@@ -37,6 +38,7 @@ public class MapController : MonoBehaviour
         _root = GetComponent<UIDocument>().rootVisualElement;
         _playerRepresentation = _root.Q<VisualElement>("Player");
         _mapImage = _root.Q<VisualElement>("Image");
+        _mapImage.style.unityBackgroundImageTintColor = Color.white;
 
         ToggleMap(false);
     }
@@ -44,13 +46,16 @@ public class MapController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        //Scan for keyboard input to toggle the map
         if (Input.GetKeyDown(KeyCode.M))
         {
             ToggleMap(!IsMapOpen);
         }
 
-        _playerRepresentation.transform.position = new Vector3(Player.transform.position.x * Multiplyer, Player.transform.position.z * -Multiplyer, 0);
-        _playerRepresentation.transform.rotation = Quaternion.Euler(0, 0, Player.transform.rotation.eulerAngles.y);
+        //Rotate and move the player icon based on the players movement
+        _playerRepresentation.style.translate = new Translate(Player.transform.position.x * Multiplyer, Player.transform.position.z * -Multiplyer, 0);
+        _playerRepresentation.style.rotate = new Rotate(new Angle(Player.transform.rotation.eulerAngles.y));
+
         //Animate the fade of the map
         if (!MapFaded && PlayerController.Instance.IsMoving && IsMapOpen)
         {

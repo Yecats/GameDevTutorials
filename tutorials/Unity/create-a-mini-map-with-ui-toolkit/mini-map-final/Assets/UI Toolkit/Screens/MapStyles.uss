@@ -1,21 +1,16 @@
 :root {
-    --white-dim: rgba(255, 255, 200, 0.55);
-    --map-border-color: rgb(255, 255, 200);
+    --map-border-color: rgb(255, 255, 255);
 }
 
 .map-img {
     height: 100%;
     width: 115%;
-    background-image: url('/Assets/Sprites/game_map.png');
+    background-image: url('project://database/Assets/Sprites/game_map.png?fileID=21300000&guid=9aa501fed16f8ff418a3755e680d98c2&type=3#game_map');
     -unity-background-scale-mode: scale-and-crop;
     align-items: center;
     justify-content: center;
     position: absolute;
-    -unityBackgroundImageTintColor: white
-}
-
-.dim {
-    -unity-background-image-tint-color: var(--white-dim);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
 }
 
 .map-container {
