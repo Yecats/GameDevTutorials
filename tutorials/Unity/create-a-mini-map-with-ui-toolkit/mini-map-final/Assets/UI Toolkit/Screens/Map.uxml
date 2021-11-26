@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Screens/MapStyles.uss?fileID=7433441132597879392&amp;guid=54f0129aef30dd04ea9c0dd68e83fda9&amp;type=3#MapStyles" />
-    <ui:VisualElement name="container" style="flex-grow: 1; align-items: center; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; justify-content: center;">
-        <ui:VisualElement name="Map" class="map-container" style="height: 90%;">
-            <ui:VisualElement name="Image" focusable="false" class="map-img" style="top: 1px; left: 0;">
+    <ui:VisualElement name="container" class="root-container-mini">
+        <ui:VisualElement name="Map" class="map-container" style="align-items: center; justify-content: center;">
+            <ui:VisualElement name="Image" focusable="false" class="map-img" style="transform-origin: center;">
                 <ui:VisualElement name="Player" style="width: 10px; height: 10px;">
                     <ui:VisualElement name="Cone" style="background-image: url(&apos;project://database/Assets/Sprites/playerCone.png?fileID=21300000&amp;guid=0474f680ae98d884a8bf7ed7a1836229&amp;type=3#playerCone&apos;); width: 80px; height: 60px; -unity-background-scale-mode: scale-to-fit; position: absolute; top: -54px; left: -35px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.29); align-items: center; justify-content: flex-end;">
                         <ui:VisualElement name="Player" style="width: 10px; height: 10px; background-image: url(&apos;project://database/Assets/Sprites/player_arrow.png?fileID=2800000&amp;guid=3e620c7728093c44e811a73f5fb61640&amp;type=3#player_arrow&apos;); -unity-background-image-tint-color: rgb(255, 50, 73); top: 4px;" />

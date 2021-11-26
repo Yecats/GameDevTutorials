@@ -15,14 +15,38 @@
 
 .map-container {
     width: 50%;
-    height: 747px;
+    height: 90%;
     overflow: hidden;
-    border-left-color: var(--map-border-color);
-    border-right-color: var(--map-border-color);
-    border-top-color: var(--map-border-color);
-    border-bottom-color: var(--map-border-color);
-    border-left-width: 3px;
-    border-right-width: 3px;
-    border-top-width: 3px;
-    border-bottom-width: 3px;
+}
+
+.root-container-full {
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.root-container-mini {
+    flex-grow: 1;
+    align-items: flex-end;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+}
+
+.root-container-mini #Map {
+    width: 150px;
+    height: 150px;
+}
+
+.root-container-mini #Image {
+    position: absolute;
+    -unity-background-scale-mode: scale-and-crop;
+    width: 512px;
+    height: 512px;
 }
