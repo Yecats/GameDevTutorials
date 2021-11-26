@@ -2250,7 +2250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1608728059}
-  Multiplyer: 6.8
+  Multiplyer: 5.3
 --- !u!114 &880629212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2818,7 +2818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1192302434
 MonoBehaviour:
   m_ObjectHideFlags: 0
