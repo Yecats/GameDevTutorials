@@ -22,11 +22,16 @@ public class MapController : MonoBehaviour
         
         set
         {
-            _mapFaded = value;
+            if (_mapFaded == value)
+            {
+                return;
+            }
 
-            _mapImage.experimental.animation.Start(_mapImage.style.unityBackgroundImageTintColor.value, value 
-                ? _mapImage.style.unityBackgroundImageTintColor.value.WithAlpha(.5f) 
-                : Color.white, 500, (elm, val) => { elm.style.unityBackgroundImageTintColor = val; });
+            Color end = !_mapFaded ? Color.white.WithAlpha(.5f) : Color.white;
+
+            _mapImage.experimental.animation.Start(_mapImage.style.unityBackgroundImageTintColor.value, end, 500, (elm, val) => { elm.style.unityBackgroundImageTintColor = val; });
+
+            _mapFaded = value;
         }
     }
 
@@ -60,31 +65,23 @@ public class MapController : MonoBehaviour
         _playerRepresentation.style.translate = new Translate(Player.transform.position.x * Multiplyer, Player.transform.position.z * -Multiplyer, 0);
         _playerRepresentation.style.rotate = new Rotate(new Angle(Player.transform.rotation.eulerAngles.y));
 
-        //Animate the fade of the map when open
-        if (!MapFaded && PlayerController.Instance.IsMoving && IsMapOpen)
-        {
-            MapFaded = true;    
-        }
-        else if (MapFaded && !PlayerController.Instance.IsMoving && IsMapOpen)
-        {
-            MapFaded = false;
-        }
+        MapFaded = IsMapOpen && PlayerController.Instance.IsMoving;
 
         //Move the mini map 
         if (!IsMapOpen)
-        {
-            //Calculate the width/height bounds for the map image
-            var clampWidth = _mapImage.worldBound.width / 2 - _mapContainer.worldBound.width / 2;
-            var clampHeight = _mapImage.worldBound.height / 2 - _mapContainer.worldBound.height / 2;
+    {
+        //Calculate the width/height bounds for the map image
+        var clampWidth = _mapImage.worldBound.width / 2 - _mapContainer.worldBound.width / 2;
+        var clampHeight = _mapImage.worldBound.height / 2 - _mapContainer.worldBound.height / 2;
 
-            //Clamp the bounds so that the map doesn't scroll past the playable area (i.e. the map image)
-            var xPos = Mathf.Clamp(Player.transform.position.x * -Multiplyer, -clampWidth, clampWidth);
-            var yPos = Mathf.Clamp(Player.transform.position.z * Multiplyer, -clampHeight, clampHeight);
+        //Clamp the bounds so that the map doesn't scroll past the playable area (i.e. the map image)
+        var xPos = Mathf.Clamp(Player.transform.position.x * -Multiplyer, -clampWidth, clampWidth);
+        var yPos = Mathf.Clamp(Player.transform.position.z * Multiplyer, -clampHeight, clampHeight);
 
-            //Move the map image
-            _mapImage.style.translate = new Translate(xPos, yPos, 0);
+        //Move the map image
+        _mapImage.style.translate = new Translate(xPos, yPos, 0);
 
-        }
+    }
     }
     
 }
