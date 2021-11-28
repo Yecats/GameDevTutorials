@@ -1,0 +1,86 @@
+:root {
+    --map-border-color: rgb(255, 255, 255);
+}
+
+.map-img {
+    height: 100%;
+    width: 115%;
+    background-image: url('project://database/Assets/Sprites/game_map.png?fileID=21300000&guid=9aa501fed16f8ff418a3755e680d98c2&type=3#game_map');
+    -unity-background-scale-mode: scale-and-crop;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.map-container {
+    width: 50%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.root-container-full {
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.root-container-mini {
+    flex-grow: 1;
+    align-items: flex-end;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+}
+
+.root-container-mini #Map {
+    width: 150px;
+    height: 150px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.root-container-mini #Image {
+    position: absolute;
+    -unity-background-scale-mode: scale-and-crop;
+    width: 512px;
+    height: 512px;
+}
+
+.player-container {
+    width: 10px;
+    height: 10px;
+}
+
+.player-cone {
+    background-image: url('project://database/Assets/Sprites/playerCone.png?fileID=21300000&guid=0474f680ae98d884a8bf7ed7a1836229&type=3#playerCone');
+    width: 80px;
+    height: 60px;
+    -unity-background-scale-mode: scale-to-fit;
+    position: absolute;
+    top: -54px;
+    left: -35px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.29);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.player-arrow {
+    width: 10px;
+    height: 10px;
+    background-image: url('project://database/Assets/Sprites/player_arrow.png?fileID=2800000&guid=3e620c7728093c44e811a73f5fb61640&type=3#player_arrow');
+    -unity-background-image-tint-color: rgb(255, 50, 73);
+    top: 4px;
+}

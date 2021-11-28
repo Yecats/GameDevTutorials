@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Screens/MapStyles.uss?fileID=7433441132597879392&amp;guid=54f0129aef30dd04ea9c0dd68e83fda9&amp;type=3#MapStyles" />
+    <ui:VisualElement name="Container" class="root-container-mini">
+        <ui:VisualElement name="Map" class="map-container" style="align-items: center; justify-content: center;">
+            <ui:VisualElement name="Image" focusable="false" class="map-img" style="-unity-background-scale-mode: scale-and-crop;">
+                <ui:VisualElement name="Player" class="player-container">
+                    <ui:VisualElement name="Cone" class="player-cone">
+                        <ui:VisualElement name="Arrow" class="player-arrow" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
