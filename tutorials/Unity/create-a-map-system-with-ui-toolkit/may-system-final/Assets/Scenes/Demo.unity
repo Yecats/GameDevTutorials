@@ -2250,7 +2250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1608728059}
-  Multiplyer: 5.3
+  miniMultiplyer: 5.3
+  fullMultiplyer: 7
 --- !u!114 &880629212
 MonoBehaviour:
   m_ObjectHideFlags: 0
