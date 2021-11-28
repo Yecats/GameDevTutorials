@@ -79,8 +79,12 @@ public class MapController : MonoBehaviour
 
             //Move the map image
             _mapImage.style.translate = new Translate(xPos, yPos, 0);
-
         }
+    else
+    {
+        //Reset it back to zero
+        _mapImage.style.translate = new Translate(0, 0, 0);
+    }
     }
 
     /// <summary>
