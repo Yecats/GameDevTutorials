@@ -55,7 +55,7 @@ When the `InventorySlot` is first instantiated, it’ll create a new **Image** e
 ```
 
 1. `.slotContainer` will be a 128x128 square with **ItemSlotBackground.png** set to the `background-image`. Setting the `border-radius` to **3px** will give it slightly rounded corners. Finally, `margin` will add some space between all of the `InventorySlots`.
-1. `.slotIcon` uses `flex-grow` to ensure that it fills up all available space but then applies a `padding` of **4px** to make sure it’s slightly smaller than the parent.
+1. `.slotIcon` uses `flex-grow` to ensure that it fills up all available space but then applies a `padding` of **15px** to make sure it’s slightly smaller than the parent.
 
 You need to have each slot instantiated before you can see InventorySlot in action. Create another class called `InventoryUIController`. Have it inherit from `MonoBehaviour` and add the following code:
 
