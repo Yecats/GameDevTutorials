@@ -1,0 +1,22 @@
+:root {
+    --color-1: rgba(0, 0, 0, 0.75);
+    --color-2: rgba(108, 160, 195, 255);
+    --font-size-Large: 42;
+    --font-size-Medium: 48;
+    --font-size-Small: 35;
+}
+
+.H1
+{
+    font-size: 50;
+}
+
+.H2
+{
+    font-size: 48;
+}
+
+.H3
+{
+    font-size: 50;
+}
