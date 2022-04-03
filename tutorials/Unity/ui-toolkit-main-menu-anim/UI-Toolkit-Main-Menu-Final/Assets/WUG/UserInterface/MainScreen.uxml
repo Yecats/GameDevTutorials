@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/WUG/UserInterface/MainMenu.uss?fileID=7433441132597879392&amp;guid=9a114dac4235202468fe94d5ebbf12f4&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Container">
+        <ui:VisualElement name="Menu" class="menu-expanded" style="transition-delay: 1s; transition-timing-function: ease-in;">
+            <ui:VisualElement name="MenuContent" style="flex-grow: 1;">
+                <ui:Label text="CONTINUE" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="NEW GAME" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="MULTIPLAYER" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="SETTINGS" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="QUIT" display-tooltip-when-elided="true" name="Option" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SettingsContent">
+                <ui:Label text="SETTINGS" display-tooltip-when-elided="true" name="Header" />
+                <ui:Label text="AUDIO" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="GAMEPLAY" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="DISPLAY" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="SAVE" display-tooltip-when-elided="true" name="Option" />
+                <ui:Label text="CANCEL" display-tooltip-when-elided="true" name="Option" />
+            </ui:VisualElement>
+            <ui:VisualElement name="DecorativeBar" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Content" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

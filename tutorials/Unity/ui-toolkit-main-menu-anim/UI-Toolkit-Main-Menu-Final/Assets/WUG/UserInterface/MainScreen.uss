@@ -1,0 +1,96 @@
+:root {
+    --color-1: rgba(0, 0, 0, 0.75);
+    --color-2: rgb(108, 160, 195);
+    --background-img: url('project://database/Assets/WUG/Sprites/Background.jpeg?fileID=2800000&guid=8a25f4c0fbab34b4082589c3e69dff69&type=3#Background');
+    -unity-font-definition: url('project://database/Assets/WUG/Fonts/Syncopate-Regular%20SDF.asset?fileID=11400000&guid=570705000cfefab43b186a21c71908cf&type=2#Syncopate-Regular SDF');
+    color: var(--color-2);
+    --font-size-h1: 35px;
+    --font-size-h2: 30px;
+    --font-size-h3: 25px;
+}
+
+#Container {
+    flex-grow: 1;
+    background-image: var(--background-img);
+    flex-direction: row;
+}
+
+#Menu {
+    width: 28%;
+    flex-direction: row;
+    transform-origin: left top;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-bounce;
+    transition-property: scale;
+}
+
+#Option {
+    transition-duration: 0.1s;
+}
+
+#Option:hover {
+    color: white;
+}
+
+.mode-settings #SettingsContent {
+    display: flex;
+}
+
+.mode-settings #MenuContent {
+    display: none;
+}
+
+#MenuContent {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#MenuContent > #Option {
+    font-size: var(--font-size-h2);
+}
+
+#MenuContent > #Option:hover {
+    font-size: var(--font-size-h1);
+}
+
+#SettingsContent {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#SettingsContent > #Option {
+    font-size: var(--font-size-h3);
+}
+
+#SettingsContent > #Option:hover {
+    font-size: var(--font-size-h2);
+}
+
+#SettingsContent > #Header {
+    font-size: var(--font-size-h1);
+    border-bottom-width: 1.5px;
+    border-color: var(--color-2);
+    margin-bottom: 10px;
+}
+
+#Menu > VisualElement {
+    background-color: var(--color-1);
+}
+
+.menu-expanded {
+    scale: 1 1;
+}
+
+.menu-collapsed {
+    scale: 0 1;
+}
+
+#DecorativeBar {
+    width: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
