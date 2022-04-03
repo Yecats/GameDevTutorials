@@ -1,22 +1,44 @@
 :root {
     --color-1: rgba(0, 0, 0, 0.75);
-    --color-2: rgba(108, 160, 195, 255);
+    --color-2: rgb(108, 160, 195);
+    --background-img: url('project://database/Assets/WUG/Sprites/Background.jpeg?fileID=2800000&guid=8a25f4c0fbab34b4082589c3e69dff69&type=3#Background');
     --font-size-Large: 42;
     --font-size-Medium: 48;
     --font-size-Small: 35;
 }
 
-.H1
-{
+.H1 {
     font-size: 50;
 }
 
-.H2
-{
+.H2 {
     font-size: 48;
 }
 
-.H3
-{
+.H3 {
     font-size: 50;
+}
+
+#Main {
+    flex-grow: 1;
+    background-image: var(--background-img);
+    flex-direction: row;
+}
+
+#Menu {
+    width: 25%;
+    flex-direction: row;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+
+#DecorativeBar {
+    width: 5px;
+    background-color: var(--color-1);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#MenuContent {
+    background-color: var(--color-1);
 }
